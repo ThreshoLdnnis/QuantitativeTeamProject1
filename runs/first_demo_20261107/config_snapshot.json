@@ -1,0 +1,41 @@
+{
+  "start": "2020-01-01",
+  "end": "2025-12-31",
+  "lookback": 20,
+  "activity_short": 5,
+  "activity_long": 20,
+  "activity_mode": "relative_volume",
+  "directions": {
+    "momentum": 1,
+    "volatility": -1,
+    "activity": -1
+  },
+  "mad_scale": 3.0,
+  "top_n": 10,
+  "groups": 5,
+  "initial_cash": 1000000,
+  "commission_bps": 3,
+  "slippage_bps": 5,
+  "sell_tax_bps": 5,
+  "cost_multipliers": [
+    0,
+    1,
+    2
+  ],
+  "annual_risk_free": 0,
+  "splits": {
+    "development": [
+      "2020-01-01",
+      "2022-12-31"
+    ],
+    "validation": [
+      "2023-01-01",
+      "2023-12-31"
+    ],
+    "test": [
+      "2024-01-01",
+      "2025-12-31"
+    ]
+  },
+  "allow_unknown_status": false
+}

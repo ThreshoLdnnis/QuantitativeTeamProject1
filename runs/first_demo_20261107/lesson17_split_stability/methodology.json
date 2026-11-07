@@ -1,0 +1,38 @@
+{
+  "source": "synthetic teaching data; weekday calendar, not an A-share exchange calendar",
+  "evaluation": "retrospective split stability check; full history has already been viewed",
+  "rules": "frozen lesson16 config and cost1 accounts; no parameter selection or backtest rerun",
+  "partitions": {
+    "development": [
+      "2020-01-01",
+      "2022-12-31"
+    ],
+    "validation": [
+      "2023-01-01",
+      "2023-12-31"
+    ],
+    "test": [
+      "2024-01-01",
+      "2025-12-31"
+    ]
+  },
+  "annual_sessions": 252,
+  "local_nav": "cumprod(1 + original daily returns); equivalent to equity / preceding session equity",
+  "boundary": "retain first included return, prior holdings and prior equity; initial capital for first segment",
+  "drawdown": "local high-water mark starts at 1; segment drawdowns do not reconstruct full-history drawdown",
+  "comparison": "same dates and cost1; total-return difference in percentage points; relative wealth ratio minus 1",
+  "caution": "three unequal-length periods are descriptive, not proof of stability or an untouched holdout",
+  "positive_relative_periods": 1,
+  "number_of_periods": 3,
+  "inputs": {
+    "strategy": {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-11-02\\bu\\outputs\\QuantitativeTeamProject1\\runs\\first_demo_20261107\\lesson16_benchmark_cost\\strategy_cost1\\daily.csv",
+      "sha256": "3849351c94d31b5f8015a805a51b08e07fdc06440db1c84c6eb6ff076cee6bc9"
+    },
+    "benchmark": {
+      "path": "C:\\Users\\ASUS\\Documents\\Codex\\2026-11-02\\bu\\outputs\\QuantitativeTeamProject1\\runs\\first_demo_20261107\\lesson16_benchmark_cost\\benchmark_cost1\\daily.csv",
+      "sha256": "5664d2be0483f094930c96a5238092391b93a469382e4e498d3b21e33cbe6292"
+    }
+  },
+  "config_sha256": "d26077428b8973caad9815f4d360b3cfa9b7123aa2b4567b578decd9e0b7bd88"
+}

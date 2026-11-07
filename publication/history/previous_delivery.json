@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-11-07T10:15:53.641164+00:00",
+  "archive": "A股多因子研究系统_教学完整版.zip",
+  "bytes": 111713738,
+  "sha256": "8cb089d03f27738904abae2c6548f20ae13880b8b27751260f542d7d078e0656",
+  "archive_file_count": 411,
+  "crc": "passed",
+  "manifest_file_hashes": "passed",
+  "virtual_environment_included": false,
+  "record_scope": "Historical local teaching delivery before the new GitHub documentation expansion; not the new repository size or counts.",
+  "verification": {
+    "core_tests": 35,
+    "account_paths": 14,
+    "local_references": 228,
+    "relocated_clean_environment": "passed"
+  }
+}

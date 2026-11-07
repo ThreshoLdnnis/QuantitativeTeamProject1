@@ -1,0 +1,22 @@
+{
+  "dataset_kind": "synthetic",
+  "rows": 73080,
+  "symbols": 40,
+  "first_date": "2019-01-01",
+  "last_date": "2025-12-31",
+  "calendar_sessions": 1827,
+  "duplicate_keys": 0,
+  "missing_eligible_rows": 0,
+  "turnover_missing": 0,
+  "unknown_status_rows": 0,
+  "blocked_buy_rows": 1077,
+  "blocked_sell_rows": 1137,
+  "limitations": [
+    "SIMULATED DATA: not A-share observations; no empirical investment conclusion is possible.",
+    "Calendar uses weekdays, including Chinese holidays; not an exchange calendar.",
+    "Artificial flags test blocked execution; they are not observed market events."
+  ],
+  "missing_eligible_rows_in_study": 0,
+  "study_start": "2020-01-01",
+  "study_end": "2025-12-31"
+}

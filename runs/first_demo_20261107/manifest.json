@@ -1,0 +1,42 @@
+{
+  "created_at_utc": "2026-11-07T10:11:54.217044+00:00",
+  "dataset": {
+    "kind": "synthetic",
+    "source": "numpy.random.default_rng; artificial teaching fixture",
+    "seed": 20261102,
+    "n_symbols": 40,
+    "price_adjustment": "none; no corporate actions simulated",
+    "universe": "synthetic fixed population known at start",
+    "limitations": [
+      "SIMULATED DATA: not A-share observations; no empirical investment conclusion is possible.",
+      "Calendar uses weekdays, including Chinese holidays; not an exchange calendar.",
+      "Artificial flags test blocked execution; they are not observed market events."
+    ]
+  },
+  "package_version": "0.1.0",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "input_files": {
+    "prices.csv": "e7fa8d62ddf8baa92f3d2b45c96096644f6c38fc13aa94e4c4acb07f57dd3b36",
+    "universe.csv": "2deb2208a998c326480639ecb3cf268013b1e8e126513cc79bc682db81767a0d",
+    "calendar.csv": "495cb65979393dee32ed520f7097cbc9c98aed87400e0c2f685cbafadf7810a3",
+    "metadata.json": "e43ac281f9e360fa1991c89d02d67fe166d43e07f4f3d7337ece9eb0c8150432"
+  },
+  "config_sha256": "2bed542a2610a6d66bc3c6a341abbd89824a44d4982723fb352a5be4a3252f47",
+  "code_sha256": {
+    "__init__.py": "175035b3409795a098a225be99a85a1d24cb7309f74f2f735501429d019558e3",
+    "__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "backtest.py": "609ac414e1855adf84f8d4bb7b58db8f2fdde64e0d21da0103f2d0bc661f2173",
+    "cli.py": "45a16743274d143619a895b381d0fd567e008193f06e50c890c741120d5d8e8e",
+    "config.py": "6adfe2b205ad9ce2200703ac0d636a150b9b06ef4581336833033511aeff60c7",
+    "data.py": "6a4f2b6cda7eb09aedd4383ceaa2138ca3408f3085259ac28dbc613122e7837b",
+    "factors.py": "aa8a6f8a8b363a15d91c2b49a74870c263d89252be6bf90d5f8c5788a3a69be8",
+    "report.py": "61472b19135514acdb4c36ffc51b02ceaab221ea3076aca14748ffe2f9b0b286",
+    "research.py": "19d6302179c849033914b38b25b749a9e4060e6527facc7a7f0d5326224ae3cf"
+  },
+  "metrics_sha256": "b7c0164095d05963d26fee073d9d1b3723a3533b9d9870fe53278f4fcd007221",
+  "claims": "Engineering baseline only; no automatic claim of factor validity or statistical significance."
+}

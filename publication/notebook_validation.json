@@ -1,0 +1,168 @@
+{
+  "executed_at_utc": "2026-11-07T12:56:58.739716+00:00",
+  "python": "3.12.14",
+  "notebooks": [
+    {
+      "step": 0,
+      "path": "lessons/00_environment/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 2,
+      "image_outputs": 0,
+      "sha256": "c252c9721101faa14fedc403aab6fcd21b326478436a674d46f29511e768c7bf"
+    },
+    {
+      "step": 1,
+      "path": "lessons/01_read_prices/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 2,
+      "image_outputs": 0,
+      "sha256": "84e260a0493e8e10286449ced1bc430983279b08828319e2323f784302580526"
+    },
+    {
+      "step": 2,
+      "path": "lessons/02_daily_returns/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 2,
+      "image_outputs": 0,
+      "sha256": "7f7bad5d5d6892249f2990380a7f8658b5c8cef7ebe3c6512dd60ce5e51b04f6"
+    },
+    {
+      "step": 3,
+      "path": "lessons/03_cumulative_returns/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 4,
+      "image_outputs": 0,
+      "sha256": "add2e2b70845bd12e0350a294f4b2acbade46ae361dd9ce95ce60c29375ede36"
+    },
+    {
+      "step": 4,
+      "path": "lessons/04_nav_drawdown/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 7,
+      "image_outputs": 1,
+      "sha256": "86d259fd5db50915f794336895566baecb4594290b8691f3db6955c9dadd8638"
+    },
+    {
+      "step": 5,
+      "path": "lessons/05_momentum_factor/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 4,
+      "image_outputs": 0,
+      "sha256": "39a5ba0c87b2e6c4103d43b0dea96ba8424c86884ed4f354d49cfaa46937fa77"
+    },
+    {
+      "step": 6,
+      "path": "lessons/06_cross_section_ranking/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 4,
+      "image_outputs": 0,
+      "sha256": "e5725ac46e623a4f2afbb4dd9191a1372f254390ead4176a78613209adccf911"
+    },
+    {
+      "step": 7,
+      "path": "lessons/07_forward_returns_rank_ic/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 9,
+      "image_outputs": 1,
+      "sha256": "34195e290bf034e4fdf32397cbe8561632a7af669799dbe47d7827b4205ba19f"
+    },
+    {
+      "step": 8,
+      "path": "lessons/08_monthly_ic_icir/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 7,
+      "image_outputs": 1,
+      "sha256": "7af8ac4d813bcf5fb54ba435df4c996f3d4452a512c5955a67e1f92cd1a6a0a2"
+    },
+    {
+      "step": 9,
+      "path": "lessons/09_quintile_returns/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 8,
+      "image_outputs": 1,
+      "sha256": "746d671a7830540ab94723d04a23cf7c3a9688ec4891965014dd26ffb199dbfb"
+    },
+    {
+      "step": 10,
+      "path": "lessons/10_volatility_activity/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "sha256": "b75c9681466f7355ca3e801ed3eaa8f149fee9a4cee31b21038c39e69e3f3eb4"
+    },
+    {
+      "step": 11,
+      "path": "lessons/11_factor_preprocessing/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "sha256": "05cc2c00393c910a636b506684f5b19d9eda90633b4cc2ef0f3de5f7af6af63e"
+    },
+    {
+      "step": 12,
+      "path": "lessons/12_equal_weight_selection/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "sha256": "56571174bad2d48429a455d6cbc2addf3e427ffa0172496d62a1d8be6cc04a79"
+    },
+    {
+      "step": 13,
+      "path": "lessons/13_first_execution/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 6,
+      "image_outputs": 1,
+      "sha256": "104ab407baee35597f0fece71671eb1b0d83cbea231da08b5be6ea23788fa527"
+    },
+    {
+      "step": 14,
+      "path": "lessons/14_daily_valuation_rebalance/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 8,
+      "image_outputs": 1,
+      "sha256": "d1cd7b54634f683c4c756037774d4dc945b8d02036e92765a7f8e08eb3c220c5"
+    },
+    {
+      "step": 15,
+      "path": "lessons/15_full_history_performance/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 7,
+      "image_outputs": 1,
+      "sha256": "adcb0bb0d6ed7ca574233489ea5b192b8ce18e05a0534733c8253f8ec4b59216"
+    },
+    {
+      "step": 16,
+      "path": "lessons/16_benchmark_cost_comparison/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 10,
+      "image_outputs": 1,
+      "sha256": "6a07e1ada7f07d6ac8b53fbfbc868370ef1a7dd7c07e0a373fc751e6a1aea944"
+    },
+    {
+      "step": 17,
+      "path": "lessons/17_split_stability/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 10,
+      "image_outputs": 1,
+      "sha256": "b36249a90bde1ae48c10aba314c00cd020fed9aaae4ed5eb1347599e082f5072"
+    },
+    {
+      "step": 18,
+      "path": "lessons/18_real_market_data/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 10,
+      "image_outputs": 1,
+      "sha256": "6b5459027022b4a7f7887436a7f2284466619cc035435e90b36910bf1a76f488"
+    },
+    {
+      "step": 19,
+      "path": "lessons/19_finalize_project/lesson.ipynb",
+      "status": "passed",
+      "code_cells": 18,
+      "image_outputs": 0,
+      "sha256": "33171e5ef963efea33de122d43d938e5da01cb721a8fa2290f103e3c79634919"
+    }
+  ],
+  "output_path_display": "Absolute workspace and environment paths normalized; numbers and images unchanged.",
+  "presentation_links_updated": "Large cached tables point to the release index; executable code and numerical/image outputs are unchanged."
+}

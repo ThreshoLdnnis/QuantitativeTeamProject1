@@ -1,0 +1,8 @@
+year,expected_fixed_pool_rows,eligible_rows,missing_fixed_pool_rows,missing_eligible_rows
+2019,7320,7314,26,20
+2020,7290,7290,0,0
+2021,7290,7290,10,10
+2022,7260,7260,7,7
+2023,7260,7260,0,0
+2024,7260,7260,0,0
+2025,7290,7290,0,0

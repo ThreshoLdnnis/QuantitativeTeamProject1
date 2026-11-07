@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ashare-factor-lab"
+version = "0.1.0"
+description = "A reproducible teaching baseline for daily A-share factor research"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4"]
+
+[project.optional-dependencies]
+market = ["akshare>=1.16"]
+plots = ["matplotlib>=3.9,<4"]
+
+[project.scripts]
+ashare-lab = "ashare_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+{
+  "kind": "counterfactual_teaching_override",
+  "symbol": "SYN034",
+  "date": "2020-03-02",
+  "override": "can_sell=False",
+  "source_unchanged": true,
+  "claim": "Artificial example, not an observed market event."
+}

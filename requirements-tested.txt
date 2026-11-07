@@ -1,0 +1,8 @@
+# Direct dependencies verified for the 19-lesson teaching project; Python 3.12.14.
+# This records direct versions, not a complete transitive dependency lock.
+numpy==2.3.5
+pandas==3.0.1
+matplotlib==3.11.2
+# Reading the bundled real-market snapshot does not require AKShare.
+# Snapshot retrieval metadata records akshare==1.20.22 in a separate environment.
+# New downloads can use the optional .[market] extra; preserve the new snapshot.

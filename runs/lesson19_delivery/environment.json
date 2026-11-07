@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "executable": "C:\\Users\\ASUS\\Documents\\Codex\\2026-11-02\\bu\\work\\github_notebook_env\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "pip": "25.0.1"
+  },
+  "note": "Recorded installed direct versions, not a full transitive lock."
+}

@@ -1,0 +1,25 @@
+{
+  "dataset_kind": "market_teaching_pool",
+  "rows": 50927,
+  "symbols": 30,
+  "first_date": "2019-01-02",
+  "last_date": "2025-12-31",
+  "calendar_sessions": 1699,
+  "duplicate_keys": 0,
+  "missing_eligible_rows": 37,
+  "turnover_missing": 0,
+  "unknown_status_rows": 50927,
+  "blocked_buy_rows": 0,
+  "blocked_sell_rows": 0,
+  "limitations": [
+    "Fixed selected survivors may introduce survivorship and selection bias; cannot represent all A shares.",
+    "Historical ST, delisting, IPO exclusions and opening execution status are not supplied by this adapter.",
+    "can_buy/can_sell are volume-based assumptions, not verified historical limit/suspension flags.",
+    "Adjusted fractional units are an economic-return proxy; corporate-action cash flows and lots are not modeled.",
+    "Historical execution status is unknown on some rows; assumed fills are educational only.",
+    "Eligible symbol/session rows are missing. Rolling windows are invalidated; missing held prices abort a backtest."
+  ],
+  "missing_eligible_rows_in_study": 0,
+  "study_start": "2023-01-01",
+  "study_end": "2025-12-31"
+}

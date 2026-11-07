@@ -1,0 +1,12 @@
+section,category,amount,row_type
+cash,initial_cash,1000000.0,component
+cash,executed_buy_notional,-999700.0899730083,component
+cash,commission,-299.91002699190244,component
+cash,sell_tax,-0.0,component
+cash,ending_cash,0.0,total
+equity,initial_equity,1000000.0,component
+equity,commission,-299.91002699190244,component
+equity,sell_tax,-0.0,component
+equity,slippage,-499.6002448640381,component
+equity,intraday_pnl,11497.383914839476,component
+equity,closing_equity,1010697.8736429836,total

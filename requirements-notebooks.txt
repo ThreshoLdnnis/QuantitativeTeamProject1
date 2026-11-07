@@ -1,0 +1,6 @@
+# 我生成和执行 Notebook 时验证的直接依赖；基础依赖另见 requirements-tested.txt。
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.2
+ipykernel==7.4.0
+jupyterlab==4.6.6

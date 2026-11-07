@@ -1,0 +1,134 @@
+{
+  "verified_at_utc": "2026-11-07T13:11:47.711023+00:00",
+  "tests": {
+    "status": "passed",
+    "tests_run": 35,
+    "log": "tests.log"
+  },
+  "sources": [
+    {
+      "dataset": "runs/first_demo_20261107/input",
+      "kind": "synthetic",
+      "price_rows": 73080,
+      "symbols": 40,
+      "calendar_sessions": 1827,
+      "verified_raw_files": 0
+    },
+    {
+      "dataset": "data/market_teaching",
+      "kind": "market_teaching_pool",
+      "price_rows": 50927,
+      "symbols": 30,
+      "calendar_sessions": 1699,
+      "verified_raw_files": 61
+    }
+  ],
+  "accounts": [
+    {
+      "case": "lesson15_strategy",
+      "days": 1566,
+      "max_equity_identity_error": 1.1641532182693481e-10,
+      "total_return": -0.035632008618946,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_strategy_cost0",
+      "days": 1566,
+      "max_equity_identity_error": 1.1641532182693481e-10,
+      "total_return": 0.06552347885927001,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_benchmark_cost0",
+      "days": 1566,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.14708387765832165,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_strategy_cost1",
+      "days": 1566,
+      "max_equity_identity_error": 1.1641532182693481e-10,
+      "total_return": -0.035632008618946,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_benchmark_cost1",
+      "days": 1566,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.1415812475376057,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_strategy_cost2",
+      "days": 1566,
+      "max_equity_identity_error": 1.1641532182693481e-10,
+      "total_return": -0.12716324724352035,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson16_benchmark_cost2",
+      "days": 1566,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.13611254335281386,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_benchmark",
+      "days": 727,
+      "max_equity_identity_error": 1.1641532182693481e-10,
+      "total_return": 0.1972822619896366,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_momentum",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.2625103640849187,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_volatility",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.4351845562798571,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_activity",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.1256259883209161,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_multifactor",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.27006276505923377,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_multifactor_cost0",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.32556043234193566,
+      "checks": "passed"
+    },
+    {
+      "case": "lesson18_multifactor_cost2",
+      "days": 727,
+      "max_equity_identity_error": 2.3283064365386963e-10,
+      "total_return": 0.2169191113998976,
+      "checks": "passed"
+    }
+  ],
+  "rebuild_requested_this_invocation": false,
+  "completed_rebuild": null,
+  "scope": "Teaching implementation and saved experiments; not real execution or strategy-validity proof.",
+  "local_links": {
+    "checked_local_references": 450,
+    "broken_local_references": 0,
+    "note": "Local target existence only; no external website availability or HTML visual-preview claim."
+  }
+}

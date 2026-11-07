@@ -1,0 +1,8 @@
+strategy,daily_rows,trade_count,max_equity_identity_error,rejected_orders,fills_after_signal,costs_reconcile
+benchmark,727,1050,1.1641532182693481e-10,0,True,True
+momentum,727,547,2.3283064365386963e-10,0,True,True
+volatility,727,458,2.3283064365386963e-10,0,True,True
+activity,727,593,2.3283064365386963e-10,0,True,True
+multifactor,727,549,2.3283064365386963e-10,0,True,True
+multifactor_cost0,727,549,2.3283064365386963e-10,0,True,True
+multifactor_cost2,727,549,2.3283064365386963e-10,0,True,True

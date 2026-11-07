@@ -1,0 +1,1785 @@
+{
+  "format_version": 1,
+  "self_hash_excluded": true,
+  "excluded": [
+    ".venv",
+    "__pycache__",
+    "*.pyc",
+    "*.egg-info",
+    ".git",
+    "*.zip"
+  ],
+  "file_count": 354,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 1421,
+      "sha256": "94adf8abc5a1925fea000a1864f9bf44886bfaf375e555754d70c04c79df3916"
+    },
+    {
+      "path": "configs/baseline.json",
+      "bytes": 577,
+      "sha256": "ce6c16674897e209344af032dc276b39eb8e4d87f9d6f65d307cd3e6540e1f49"
+    },
+    {
+      "path": "configs/market_teaching.json",
+      "bytes": 703,
+      "sha256": "26ea09e43a77f3e0a2bc2ec34a71927beccd5c584f0616ecc6d56d4506aaf3a8"
+    },
+    {
+      "path": "data/market_teaching/calendar.csv",
+      "bytes": 20394,
+      "sha256": "137caeef2aa775e2c4a09dc03d836f0cd1c96378c1ff2e384fd6d666a6a179e1"
+    },
+    {
+      "path": "data/market_teaching/metadata.json",
+      "bytes": 6973,
+      "sha256": "b21ca0efda6e6394d8cbbda81fd7d266492c34b87c30df6ba77e5b018e623751"
+    },
+    {
+      "path": "data/market_teaching/prices.csv",
+      "bytes": 4601655,
+      "sha256": "4473e5398f359f0cf2f24f7b28034ea16bd1159835df25ab6c7f80698bff9e5c"
+    },
+    {
+      "path": "data/market_teaching/raw/000001_hfq.csv",
+      "bytes": 157071,
+      "sha256": "7f56e5b5a50139298cf20820b797f03decc0ecfb81857374edb97a6999d5da86"
+    },
+    {
+      "path": "data/market_teaching/raw/000001_raw.csv",
+      "bytes": 141952,
+      "sha256": "4b4dd8c4a98371be57645ee063300dea48051471dcf82252602af7fbdb85bacb"
+    },
+    {
+      "path": "data/market_teaching/raw/000333_hfq.csv",
+      "bytes": 147657,
+      "sha256": "bc446287c3f41349b8a0dc0fd1cd144e4082c4f18e052387d1511c818cc2c928"
+    },
+    {
+      "path": "data/market_teaching/raw/000333_raw.csv",
+      "bytes": 139844,
+      "sha256": "22c1c5785993c53f9699a2a951a8470e8e7d8030482b8dbcaaac6a8df027296e"
+    },
+    {
+      "path": "data/market_teaching/raw/000651_hfq.csv",
+      "bytes": 157019,
+      "sha256": "7d64d0d2abaf4f98baae6ce8f5fb284884eb31cc9b07f97708b507f56deb08b3"
+    },
+    {
+      "path": "data/market_teaching/raw/000651_raw.csv",
+      "bytes": 140711,
+      "sha256": "e170f841014e9da2f28d6dcff604c7f7b1dd3e49e2d3261284df3b289d400966"
+    },
+    {
+      "path": "data/market_teaching/raw/000725_hfq.csv",
+      "bytes": 143461,
+      "sha256": "52055d3917e3121289080ea59295298996127f98b896716843d7de9c34fb6aae"
+    },
+    {
+      "path": "data/market_teaching/raw/000725_raw.csv",
+      "bytes": 136838,
+      "sha256": "caacab1a9c18a53fc925d80117d50bd6c0f9e9301477e7587d9ae2109cf1c159"
+    },
+    {
+      "path": "data/market_teaching/raw/000858_hfq.csv",
+      "bytes": 157253,
+      "sha256": "3eec05aa613a8463e94651084680be7f4f7aa21225414df38383ad6c81d82583"
+    },
+    {
+      "path": "data/market_teaching/raw/000858_raw.csv",
+      "bytes": 146882,
+      "sha256": "517209cfbdd94802e6bc92e8ab89d2b7c4b56210f5be95b554a1f39839b8cca1"
+    },
+    {
+      "path": "data/market_teaching/raw/002415_hfq.csv",
+      "bytes": 148031,
+      "sha256": "c34c3296e62169421bc45c97d1a87188f00f696e76c5ffc698868d245c9e9a31"
+    },
+    {
+      "path": "data/market_teaching/raw/002415_raw.csv",
+      "bytes": 140660,
+      "sha256": "755513b1e42a69c82852159ef243062a3f32264d7f4a1950f8c73eddabde2676"
+    },
+    {
+      "path": "data/market_teaching/raw/002475_hfq.csv",
+      "bytes": 155507,
+      "sha256": "e5bb79a3284ecf3c4c147ed734a88c40ba6a65bffae123ab2b286b482f128fde"
+    },
+    {
+      "path": "data/market_teaching/raw/002475_raw.csv",
+      "bytes": 141508,
+      "sha256": "c58f170be88f0baee45b77d9b93a7ce5baf4efa382bcd6dfed6c2b0ca05ef775"
+    },
+    {
+      "path": "data/market_teaching/raw/002594_hfq.csv",
+      "bytes": 146432,
+      "sha256": "662bf19ed55d7aea3701700b905894dd82d3a89549b18dd994f26cb507ca8a77"
+    },
+    {
+      "path": "data/market_teaching/raw/002594_raw.csv",
+      "bytes": 144856,
+      "sha256": "5ee77a3cc9bfd76a9637c0297911c834792713c3a1ec10da144b9fc77bddb9ef"
+    },
+    {
+      "path": "data/market_teaching/raw/600000_hfq.csv",
+      "bytes": 141044,
+      "sha256": "5273f19d00ac254db0a4b31068f2fad56188510c2fde3cd02ee006b537fee431"
+    },
+    {
+      "path": "data/market_teaching/raw/600000_raw.csv",
+      "bytes": 136058,
+      "sha256": "2e0312c5a59a49c21c7a414ab24f6a33b7c4808d5896a541ec58e8dedee08724"
+    },
+    {
+      "path": "data/market_teaching/raw/600009_hfq.csv",
+      "bytes": 143071,
+      "sha256": "ab487c4d8ddb742443db2f46cf6c999a4d0655c626cd25340e6c5063042b9b85"
+    },
+    {
+      "path": "data/market_teaching/raw/600009_raw.csv",
+      "bytes": 137565,
+      "sha256": "59cd24ee148e086bfb138a6a6aa38930022bb8d2b9eb64f96babfd22f688ba8e"
+    },
+    {
+      "path": "data/market_teaching/raw/600016_hfq.csv",
+      "bytes": 143304,
+      "sha256": "cb382283d04fd92394a14c2798ae906cb75f754d0c6a70c53b695f2c2b406f34"
+    },
+    {
+      "path": "data/market_teaching/raw/600016_raw.csv",
+      "bytes": 133468,
+      "sha256": "5923f86a946ddbcbef483f5b007ab6f3d4c8235995b72620607c2478088781a0"
+    },
+    {
+      "path": "data/market_teaching/raw/600028_hfq.csv",
+      "bytes": 140306,
+      "sha256": "23a39e6eaa1f57c4d8d492a70b33241e857528f415ba81438df403aea35cc3c1"
+    },
+    {
+      "path": "data/market_teaching/raw/600028_raw.csv",
+      "bytes": 134067,
+      "sha256": "3a2d58d46e468dfc4648d78d249d21043adb1c4226ccf5509ef7a3815a88396a"
+    },
+    {
+      "path": "data/market_teaching/raw/600030_hfq.csv",
+      "bytes": 142804,
+      "sha256": "fcf33619f9c40b9d40c8d99755f0b22c9e4397d63702053664c1976efac0494c"
+    },
+    {
+      "path": "data/market_teaching/raw/600030_raw.csv",
+      "bytes": 140545,
+      "sha256": "17e6d17c260daf151f79a5203c47743eb9ee5a5b3642f0d6ea3665b768562454"
+    },
+    {
+      "path": "data/market_teaching/raw/600036_hfq.csv",
+      "bytes": 148409,
+      "sha256": "cdd5b121e3504f7625e621572690d48b98b61f621c6316c5f3e38c136f2da111"
+    },
+    {
+      "path": "data/market_teaching/raw/600036_raw.csv",
+      "bytes": 140708,
+      "sha256": "b3cf15f706e0bedfdb9185c4351c42299a357ef99b0c261668f6ed4583bfadbf"
+    },
+    {
+      "path": "data/market_teaching/raw/600050_hfq.csv",
+      "bytes": 134583,
+      "sha256": "9faf3a0feca12b93561097c59d2830098670418638e78f155c2a37bc28f629a9"
+    },
+    {
+      "path": "data/market_teaching/raw/600050_raw.csv",
+      "bytes": 134547,
+      "sha256": "8a40ecf9fa0da2f6be11b17ba6fab09fb38a32eff94763e57f5b6f53d2a2937d"
+    },
+    {
+      "path": "data/market_teaching/raw/600104_hfq.csv",
+      "bytes": 147008,
+      "sha256": "8ab7d95ecd1d2fc7b46877052d659e55df217fa136d20daf33fa4fb2b5823bee"
+    },
+    {
+      "path": "data/market_teaching/raw/600104_raw.csv",
+      "bytes": 139852,
+      "sha256": "6489275f72da9863d92867df0f12fc220a1b5e08ce8211c58f98f67c4e52e4fe"
+    },
+    {
+      "path": "data/market_teaching/raw/600276_hfq.csv",
+      "bytes": 156257,
+      "sha256": "8d35edd80b4e8fd7b99762f1a4198f32c3011f7ed59cfb9fcd4e0006587fd666"
+    },
+    {
+      "path": "data/market_teaching/raw/600276_raw.csv",
+      "bytes": 140213,
+      "sha256": "8793ccf76c03dc7121bbd176b3c1111a4b969797fb08b4b5f883af1e1c8b2345"
+    },
+    {
+      "path": "data/market_teaching/raw/600309_hfq.csv",
+      "bytes": 155208,
+      "sha256": "94203a693a8e2f524400e90332d487bc146b1bebf1e1636534acbf4589299d90"
+    },
+    {
+      "path": "data/market_teaching/raw/600309_raw.csv",
+      "bytes": 140196,
+      "sha256": "8fdd3a1c159d4fc11ec1697111b42dc497e9e2eb98ad6d7751eace29d8b80d9c"
+    },
+    {
+      "path": "data/market_teaching/raw/600519_hfq.csv",
+      "bytes": 156774,
+      "sha256": "9b3c9c4890ecaec20930454d5d102ba59219a828800a7b3ef552e803fbe31da3"
+    },
+    {
+      "path": "data/market_teaching/raw/600519_raw.csv",
+      "bytes": 150361,
+      "sha256": "f85fa5fa36d24d92121ca6769ea6732b52050cef6aa4ac68f306a817f3e8d5e5"
+    },
+    {
+      "path": "data/market_teaching/raw/600887_hfq.csv",
+      "bytes": 155971,
+      "sha256": "74652f19947ad32378e14a2e47a79b0b42081b8a795321940a44e5b0c363c69a"
+    },
+    {
+      "path": "data/market_teaching/raw/600887_raw.csv",
+      "bytes": 140398,
+      "sha256": "770275e7b2ae76f868dc85267ef1d11d1bc9844966b6cff6305fa64d53ac06c0"
+    },
+    {
+      "path": "data/market_teaching/raw/601166_hfq.csv",
+      "bytes": 141746,
+      "sha256": "ffc4284b6806e073b3ed26da7f590657c4d45d0cabae2be1e236eecea8f3c721"
+    },
+    {
+      "path": "data/market_teaching/raw/601166_raw.csv",
+      "bytes": 141021,
+      "sha256": "071dc7163c2b6a18e54ef30ec8dc025c95f9d3100b229b6c50f0d05a19f566f5"
+    },
+    {
+      "path": "data/market_teaching/raw/601318_hfq.csv",
+      "bytes": 148792,
+      "sha256": "baff77fa9d13c1d682554b84da541b04461851f0c19b9d81d0aa1ece2ed49843"
+    },
+    {
+      "path": "data/market_teaching/raw/601318_raw.csv",
+      "bytes": 140783,
+      "sha256": "576ccab2d6f3fdff0cc1542ee214e41bee78b9f7fdd1562381f5c96c4cd604ce"
+    },
+    {
+      "path": "data/market_teaching/raw/601328_hfq.csv",
+      "bytes": 136661,
+      "sha256": "33087ae4a840005fe1f37959dcd3901f92cf7d36a55f314cdddbcca0806eeff9"
+    },
+    {
+      "path": "data/market_teaching/raw/601328_raw.csv",
+      "bytes": 133739,
+      "sha256": "07427ea353a6c07d152d40e815a353c59c7d9abce1a9c0ce77ac9f0d0843d78c"
+    },
+    {
+      "path": "data/market_teaching/raw/601398_hfq.csv",
+      "bytes": 136703,
+      "sha256": "286dbb60a56fc5d687cb84847dbc827e3527ae5fa8919d72eb78c1ca26f4d6b9"
+    },
+    {
+      "path": "data/market_teaching/raw/601398_raw.csv",
+      "bytes": 135201,
+      "sha256": "ddcff6c94561b664996e0cea95687be89874836d2118f0e79420ab7019e60f3f"
+    },
+    {
+      "path": "data/market_teaching/raw/601601_hfq.csv",
+      "bytes": 140325,
+      "sha256": "afb9f6cdfb9c4311395eb1ba35380047d6d5bea64fb9d53ff4c34b2246eb3880"
+    },
+    {
+      "path": "data/market_teaching/raw/601601_raw.csv",
+      "bytes": 139774,
+      "sha256": "8d5f3bdd11bccbc65125964a69ca5621b2c51e50b3293eb9625e739852a17517"
+    },
+    {
+      "path": "data/market_teaching/raw/601668_hfq.csv",
+      "bytes": 137832,
+      "sha256": "2cb39be1728a0e89911214db3552089c2b212d52c426addcbaa3223b33678043"
+    },
+    {
+      "path": "data/market_teaching/raw/601668_raw.csv",
+      "bytes": 135027,
+      "sha256": "8d1ae095a455c6f9d345a264036de5149a5aa7b33912b6bceb1a263557f94877"
+    },
+    {
+      "path": "data/market_teaching/raw/601688_hfq.csv",
+      "bytes": 140687,
+      "sha256": "4f972f5f49f9f5d3c10abe7460bff6d5167e6b6bfbd43cb213d03688e40c31b8"
+    },
+    {
+      "path": "data/market_teaching/raw/601688_raw.csv",
+      "bytes": 140658,
+      "sha256": "deb5b3fed35278e884ba49a38b107fff85ae818d0859bd9fcf0d4ba8a7f1c5b7"
+    },
+    {
+      "path": "data/market_teaching/raw/601857_hfq.csv",
+      "bytes": 137426,
+      "sha256": "314eb8a51f149f64ca9200c0050082a3da416f8032b997b3a44e8c5685fd18d2"
+    },
+    {
+      "path": "data/market_teaching/raw/601857_raw.csv",
+      "bytes": 134682,
+      "sha256": "9dadd7fa0187fc9ae14222d43873562483b3bf4ee57f415fccb452ec13c71c69"
+    },
+    {
+      "path": "data/market_teaching/raw/601888_hfq.csv",
+      "bytes": 148094,
+      "sha256": "def49da0dd09f4fa63273e06b0850c5f4aa298729e7ec295095495bd5c5ad63e"
+    },
+    {
+      "path": "data/market_teaching/raw/601888_raw.csv",
+      "bytes": 142254,
+      "sha256": "1a2ac3a4dd661cd6c545df80ae1eed2f3dda59267a59d0bcec8e1d3278a7a1b2"
+    },
+    {
+      "path": "data/market_teaching/raw/601939_hfq.csv",
+      "bytes": 137876,
+      "sha256": "1f05a10f6ea64c1c6fddf0ccf93fa26fd4f270bb1cd2c82f93aeeccf8c95d98d"
+    },
+    {
+      "path": "data/market_teaching/raw/601939_raw.csv",
+      "bytes": 133513,
+      "sha256": "bf3f4ba2de60112003ed8134f446f30da5bd1a9289c718e27e82bd58bce4fccb"
+    },
+    {
+      "path": "data/market_teaching/raw/calendar_source.csv",
+      "bytes": 105576,
+      "sha256": "172f3b5360876bb7cf1ce714da28124390690d25b002814c2c43fc971c434e2d"
+    },
+    {
+      "path": "data/market_teaching/universe.csv",
+      "bytes": 1223308,
+      "sha256": "8916ce3e8a7711ef2dda8577ea8fa2cc849eaf528f5412b70fc1ac7f505c9d45"
+    },
+    {
+      "path": "docs/01_从零到一实施手册.md",
+      "bytes": 8971,
+      "sha256": "222dfdef6bab00df335c91281e357327b4ed852eff4cadee66286eb4e5e97614"
+    },
+    {
+      "path": "docs/02_研究设计与边界.md",
+      "bytes": 10484,
+      "sha256": "ac4793ad471eca6d890ad7b180f1dfe18ba877de28a0a0a00601e7da0559df43"
+    },
+    {
+      "path": "docs/03_数据字典.md",
+      "bytes": 6754,
+      "sha256": "88c31e3b3ce700823fc882c5822d6d36443cf8ea9d570f6b97614d7a16c5f83a"
+    },
+    {
+      "path": "docs/04_答辩与自查.md",
+      "bytes": 5068,
+      "sha256": "ff8c1be684f8d9d94cbb61259ad4edff1085cdcac5f1054d961058c5841bf55f"
+    },
+    {
+      "path": "docs/05_本次构建与验证.md",
+      "bytes": 2639,
+      "sha256": "46cc644b918ae14a435545d96dbd1036ce2bd0890bf2bc3288946c207a7f762b"
+    },
+    {
+      "path": "docs/06_19课复现与交付指南.md",
+      "bytes": 14823,
+      "sha256": "5a23741e613e96c2efa64d31aafb5638a196049c187c229602c5c48846afacb0"
+    },
+    {
+      "path": "docs/07_教学项目总览.md",
+      "bytes": 7758,
+      "sha256": "2245f4e8876039b01328303cd578269be31d08076f3579bf5ccafdb670b06856"
+    },
+    {
+      "path": "docs/figures/cost_comparison.png",
+      "bytes": 598737,
+      "sha256": "3f880ff90d84065dbbce2b83ec9a80522c7cfe1e471739cfbdbebf5c550d119a"
+    },
+    {
+      "path": "docs/figures/real_market.png",
+      "bytes": 358615,
+      "sha256": "61ec67c9d67a1245d412b835107906bdad411b5fe5e7a81d4e77cffa046815ec"
+    },
+    {
+      "path": "docs/figures/split_stability.png",
+      "bytes": 352343,
+      "sha256": "05162772fcda50efd3acb98a1be39560b9bcce2d903b21df11958e2c388d5e2c"
+    },
+    {
+      "path": "examples/01_read_prices.py",
+      "bytes": 1264,
+      "sha256": "d8993b1b73b8c665f1450a9bce8880a62b2b20ba2f24f5fdadd4c042f574eefd"
+    },
+    {
+      "path": "examples/02_daily_returns.py",
+      "bytes": 1804,
+      "sha256": "31778979988a56cdffa8937f3ed71fb64b420943e1a067934000c48ea7646ba6"
+    },
+    {
+      "path": "examples/03_cumulative_returns.py",
+      "bytes": 3050,
+      "sha256": "e32b7cbb6950d0aba1f26f473d8611efbfa1221b1795fdc56925952a5d7a6473"
+    },
+    {
+      "path": "examples/04_nav_drawdown.py",
+      "bytes": 6229,
+      "sha256": "bc07a94b81599182ca879e8f09fbd8d4a037f8f833ed54416b1e9363bde2b5df"
+    },
+    {
+      "path": "examples/05_momentum_factor.py",
+      "bytes": 3261,
+      "sha256": "6a69f43bfa27e448bafb870b4f9f094fa5166e595ea413eb9864ecea75345c59"
+    },
+    {
+      "path": "examples/06_cross_section_ranking.py",
+      "bytes": 3331,
+      "sha256": "f2b9192bd014546988d208a85c674c998c7847d23151bdf2bc44280ff8fd88c6"
+    },
+    {
+      "path": "examples/07_forward_returns_rank_ic.py",
+      "bytes": 4986,
+      "sha256": "5af5c822bb4715fb852aca3a9a0458766a50de67ea6e4f23ce833155db1a9034"
+    },
+    {
+      "path": "examples/08_monthly_ic.py",
+      "bytes": 8575,
+      "sha256": "b5290ebb04cc8fb3350100ada31909ebf6551e3843227162cbc1cf09eeefe11f"
+    },
+    {
+      "path": "examples/09_quintile_returns.py",
+      "bytes": 10766,
+      "sha256": "ada6822e12d8f646b6bfb68e1686f18865434182629f94b90886f0b74f86e29d"
+    },
+    {
+      "path": "examples/10_volatility_activity.py",
+      "bytes": 4438,
+      "sha256": "4ecfaab3fb69ceb5207123ca2f11b1e51d423576252b5a4f964dd5b4cc5ada78"
+    },
+    {
+      "path": "examples/11_factor_preprocessing.py",
+      "bytes": 7728,
+      "sha256": "6905d75b23117625fad37c927c015fc392df2cb797d39bbf957583ec84fee513"
+    },
+    {
+      "path": "examples/12_equal_weight_selection.py",
+      "bytes": 7397,
+      "sha256": "2dd2305ebb94550986c03db4d57fd9b9d39f39b66eb843e81ae77cfe63b360d6"
+    },
+    {
+      "path": "examples/13_first_execution.py",
+      "bytes": 7216,
+      "sha256": "c789acc185a32959148ead1a67246aecff8353a93c9cef1f5b42aa2aade19900"
+    },
+    {
+      "path": "examples/14_daily_valuation_rebalance.py",
+      "bytes": 13839,
+      "sha256": "3025543b66f939f5a8c3e79e107d6f04fa7467e16052549786dca441b59bd0d2"
+    },
+    {
+      "path": "examples/15_full_history_performance.py",
+      "bytes": 12910,
+      "sha256": "9fe25aed942f3dcaf87b244e077714535707531f97b129ca3bf01ef2f1540576"
+    },
+    {
+      "path": "examples/16_benchmark_cost_comparison.py",
+      "bytes": 14540,
+      "sha256": "c5d7e90d9e7983b9f3fe8487a074a7d2235ace73fea629742352b280c2c35002"
+    },
+    {
+      "path": "examples/17_split_stability.py",
+      "bytes": 17185,
+      "sha256": "dd434bb0d84e89a3016f0628726792ca243b04a36432c3a21b90415e1ec5ef22"
+    },
+    {
+      "path": "examples/18_real_market_data.py",
+      "bytes": 15453,
+      "sha256": "f1283fa2a38751fcd9dcf453e784fd1de6b83a9f71a2faaa3b70f8985cd9a86d"
+    },
+    {
+      "path": "examples/19_finalize_project.py",
+      "bytes": 25651,
+      "sha256": "0a3b3bb2414e181c48074dfec2f5a083f4b7211c2964ae4fa23dc006b017ee83"
+    },
+    {
+      "path": "lessons/00_environment/lesson.ipynb",
+      "bytes": 16444,
+      "sha256": "c252c9721101faa14fedc403aab6fcd21b326478436a674d46f29511e768c7bf"
+    },
+    {
+      "path": "lessons/00_environment/README.md",
+      "bytes": 11260,
+      "sha256": "0ee7a448b8aeb5775befefe9a3d331d4b6695d116ac32df409ab8896746bc3ec"
+    },
+    {
+      "path": "lessons/01_read_prices/lesson.ipynb",
+      "bytes": 19117,
+      "sha256": "84e260a0493e8e10286449ced1bc430983279b08828319e2323f784302580526"
+    },
+    {
+      "path": "lessons/01_read_prices/README.md",
+      "bytes": 12226,
+      "sha256": "e8c29502bcd34d7b77ba0058672fb036762e0f69ac914cb447d38810a57ea8ab"
+    },
+    {
+      "path": "lessons/02_daily_returns/lesson.ipynb",
+      "bytes": 18726,
+      "sha256": "7f7bad5d5d6892249f2990380a7f8658b5c8cef7ebe3c6512dd60ce5e51b04f6"
+    },
+    {
+      "path": "lessons/02_daily_returns/README.md",
+      "bytes": 12688,
+      "sha256": "81055247d57d673ff4d008b9d048b055df100417569b42eeff2dedae95358191"
+    },
+    {
+      "path": "lessons/03_cumulative_returns/lesson.ipynb",
+      "bytes": 21408,
+      "sha256": "add2e2b70845bd12e0350a294f4b2acbade46ae361dd9ce95ce60c29375ede36"
+    },
+    {
+      "path": "lessons/03_cumulative_returns/README.md",
+      "bytes": 13398,
+      "sha256": "ec9505e25a5639273c82fabeab09be003fb97c83f045248b77f703b4a2de660e"
+    },
+    {
+      "path": "lessons/04_nav_drawdown/lesson.ipynb",
+      "bytes": 361578,
+      "sha256": "86d259fd5db50915f794336895566baecb4594290b8691f3db6955c9dadd8638"
+    },
+    {
+      "path": "lessons/04_nav_drawdown/README.md",
+      "bytes": 16464,
+      "sha256": "38d8eb5c97195cef2126550806ab98931022b018865fd19da092923214dd2dcb"
+    },
+    {
+      "path": "lessons/05_momentum_factor/lesson.ipynb",
+      "bytes": 22818,
+      "sha256": "39a5ba0c87b2e6c4103d43b0dea96ba8424c86884ed4f354d49cfaa46937fa77"
+    },
+    {
+      "path": "lessons/05_momentum_factor/README.md",
+      "bytes": 13227,
+      "sha256": "f81193d56586806305013a435070f150966fb529ebe4db8328ae94716d0572ac"
+    },
+    {
+      "path": "lessons/06_cross_section_ranking/lesson.ipynb",
+      "bytes": 22165,
+      "sha256": "e5725ac46e623a4f2afbb4dd9191a1372f254390ead4176a78613209adccf911"
+    },
+    {
+      "path": "lessons/06_cross_section_ranking/README.md",
+      "bytes": 14270,
+      "sha256": "536d18afbe079f5e79408e71b22edcec35297f430e15d9739e54bb94248891d0"
+    },
+    {
+      "path": "lessons/07_forward_returns_rank_ic/lesson.ipynb",
+      "bytes": 269546,
+      "sha256": "34195e290bf034e4fdf32397cbe8561632a7af669799dbe47d7827b4205ba19f"
+    },
+    {
+      "path": "lessons/07_forward_returns_rank_ic/README.md",
+      "bytes": 16305,
+      "sha256": "58bfef8ad27279677b55d1d85b0402a11a6d2afa4b585243e000c165c8e9f19b"
+    },
+    {
+      "path": "lessons/08_monthly_ic_icir/lesson.ipynb",
+      "bytes": 273262,
+      "sha256": "7af8ac4d813bcf5fb54ba435df4c996f3d4452a512c5955a67e1f92cd1a6a0a2"
+    },
+    {
+      "path": "lessons/08_monthly_ic_icir/README.md",
+      "bytes": 19648,
+      "sha256": "9cdb02c21e8f9d5cafd5cd67e11e53143d81acbe8d32f11d2c55d5bf8363f8d8"
+    },
+    {
+      "path": "lessons/09_quintile_returns/lesson.ipynb",
+      "bytes": 436033,
+      "sha256": "746d671a7830540ab94723d04a23cf7c3a9688ec4891965014dd26ffb199dbfb"
+    },
+    {
+      "path": "lessons/09_quintile_returns/README.md",
+      "bytes": 22260,
+      "sha256": "32866479bfb1b376d573d262b506cfff9fdec28cb2a36726f40b2dfc27d0d657"
+    },
+    {
+      "path": "lessons/10_volatility_activity/lesson.ipynb",
+      "bytes": 210160,
+      "sha256": "b75c9681466f7355ca3e801ed3eaa8f149fee9a4cee31b21038c39e69e3f3eb4"
+    },
+    {
+      "path": "lessons/10_volatility_activity/README.md",
+      "bytes": 15377,
+      "sha256": "d6a2ff2234b6f13f4968336eb1abc781ca440f42394bd1c84bb0045983f0173b"
+    },
+    {
+      "path": "lessons/11_factor_preprocessing/lesson.ipynb",
+      "bytes": 214281,
+      "sha256": "05cc2c00393c910a636b506684f5b19d9eda90633b4cc2ef0f3de5f7af6af63e"
+    },
+    {
+      "path": "lessons/11_factor_preprocessing/README.md",
+      "bytes": 18854,
+      "sha256": "b53593b51cf36d44458ed5beb741b896e1ef7af84d83bfbaa94bcf2b4848db66"
+    },
+    {
+      "path": "lessons/12_equal_weight_selection/lesson.ipynb",
+      "bytes": 227843,
+      "sha256": "56571174bad2d48429a455d6cbc2addf3e427ffa0172496d62a1d8be6cc04a79"
+    },
+    {
+      "path": "lessons/12_equal_weight_selection/README.md",
+      "bytes": 18901,
+      "sha256": "af2cb4645dd5314157e5bf0ede0f517a94e2f290ec0c85ef65f4b0b5592f6b3a"
+    },
+    {
+      "path": "lessons/13_first_execution/lesson.ipynb",
+      "bytes": 227201,
+      "sha256": "104ab407baee35597f0fece71671eb1b0d83cbea231da08b5be6ea23788fa527"
+    },
+    {
+      "path": "lessons/13_first_execution/README.md",
+      "bytes": 18280,
+      "sha256": "dfa5a70e366b17f1a39ce62d2787a5231610d676032062cc46b10674a3c32ac7"
+    },
+    {
+      "path": "lessons/14_daily_valuation_rebalance/lesson.ipynb",
+      "bytes": 225729,
+      "sha256": "d1cd7b54634f683c4c756037774d4dc945b8d02036e92765a7f8e08eb3c220c5"
+    },
+    {
+      "path": "lessons/14_daily_valuation_rebalance/README.md",
+      "bytes": 25320,
+      "sha256": "b079d93d714e6bbc52f29348c2e695ee884125561e37228e710a2a44bbcf7ec5"
+    },
+    {
+      "path": "lessons/15_full_history_performance/lesson.ipynb",
+      "bytes": 426718,
+      "sha256": "adcb0bb0d6ed7ca574233489ea5b192b8ce18e05a0534733c8253f8ec4b59216"
+    },
+    {
+      "path": "lessons/15_full_history_performance/README.md",
+      "bytes": 24314,
+      "sha256": "2c89eb9ce8452f32853bc2a363cb6845acd736e28775e959143fcd0e0fad0584"
+    },
+    {
+      "path": "lessons/16_benchmark_cost_comparison/lesson.ipynb",
+      "bytes": 839821,
+      "sha256": "6a07e1ada7f07d6ac8b53fbfbc868370ef1a7dd7c07e0a373fc751e6a1aea944"
+    },
+    {
+      "path": "lessons/16_benchmark_cost_comparison/README.md",
+      "bytes": 26047,
+      "sha256": "4e066f3592986b0a3736243a648ac796c5fe73b21b205d881530815ecc4d4e72"
+    },
+    {
+      "path": "lessons/17_split_stability/lesson.ipynb",
+      "bytes": 515231,
+      "sha256": "b36249a90bde1ae48c10aba314c00cd020fed9aaae4ed5eb1347599e082f5072"
+    },
+    {
+      "path": "lessons/17_split_stability/README.md",
+      "bytes": 28721,
+      "sha256": "e81fb42defcfe03ff3f55edf3bf1c9a631facf667188e17873fe81875f7e589e"
+    },
+    {
+      "path": "lessons/18_real_market_data/lesson.ipynb",
+      "bytes": 521483,
+      "sha256": "6b5459027022b4a7f7887436a7f2284466619cc035435e90b36910bf1a76f488"
+    },
+    {
+      "path": "lessons/18_real_market_data/README.md",
+      "bytes": 27287,
+      "sha256": "3a5625b6f3f924a66d541e22c4f5b4cb28fef5c8f267e949c89ca318faddf483"
+    },
+    {
+      "path": "lessons/19_finalize_project/lesson.ipynb",
+      "bytes": 57969,
+      "sha256": "33171e5ef963efea33de122d43d938e5da01cb721a8fa2290f103e3c79634919"
+    },
+    {
+      "path": "lessons/19_finalize_project/README.md",
+      "bytes": 39501,
+      "sha256": "ba1e46bf725c0229a8ea562ff1196f2eddf92bdc5edfe9245a68f4cc7ed41151"
+    },
+    {
+      "path": "publication/ASSET_INDEX.md",
+      "bytes": 4714,
+      "sha256": "3b778ed5fbccffc7481824680eb31af4708b44c80086f337cd97bb1a74ff1fbb"
+    },
+    {
+      "path": "publication/build_learning_materials.py",
+      "bytes": 14342,
+      "sha256": "bc318fb8b93421691b774a7ebbb6436b1442afc54074fefef23588aeb2149692"
+    },
+    {
+      "path": "publication/create_full_snapshot.py",
+      "bytes": 1529,
+      "sha256": "7b7e604759e535dca3263e10eaa7ac130517cfc68744ed1a7ffbfd254fa24c9f"
+    },
+    {
+      "path": "publication/environment_check.py",
+      "bytes": 799,
+      "sha256": "12047ccf520ba3063e55c15217b613befec3467379f64d029c46e812f317957f"
+    },
+    {
+      "path": "publication/history/previous_delivery.json",
+      "bytes": 650,
+      "sha256": "4673d42ab344950c3fa3133429a70f3cc9635df547a7fb9635097d63e1629c8b"
+    },
+    {
+      "path": "publication/notebook_validation.json",
+      "bytes": 5489,
+      "sha256": "17eb048dd86099c4c8d573bcc8c00060dc2fd4ac3c60be3b0cc469a206a0b212"
+    },
+    {
+      "path": "publication/prepare_publication.py",
+      "bytes": 10259,
+      "sha256": "fe0ed60d35f025e21bad5cd5bb85c5775a6cb799b018f219e3e71df893d9c2e4"
+    },
+    {
+      "path": "publication/restore_snapshot.py",
+      "bytes": 2005,
+      "sha256": "42a3463f58b18a7a09001ad2f948ddb328ebc939384a35b6acd8444af8aa854f"
+    },
+    {
+      "path": "publication/validation.json",
+      "bytes": 304,
+      "sha256": "c5ebd3f16f00fdaecdf4992d99c8123450d2656a056d5c986334a3a6d3445738"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 497,
+      "sha256": "a37c2d05d10e932339f14342956a6c56eca9c241e05d0f9248dea20c74490259"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8089,
+      "sha256": "03a6f771e1a1301336975afb172e4f57b0aa16558e184870a11bfb843d30302e"
+    },
+    {
+      "path": "requirements-notebooks.txt",
+      "bytes": 196,
+      "sha256": "7e220b5ca77d2d7921383878197cfca8b4b098ced91296ba58d815a02c6446bb"
+    },
+    {
+      "path": "requirements-tested.txt",
+      "bytes": 436,
+      "sha256": "1ce22ae38fe851090e83a605394c9b6e91caed0730e35869f7fb4dd39a5cac83"
+    },
+    {
+      "path": "runs/failed_2020_2025.json",
+      "bytes": 423,
+      "sha256": "45936e02dc56eb4a38d530b5a43783f0899c9150a7339fd47b5cbb87799032c0"
+    },
+    {
+      "path": "runs/first_demo_20261107/config_snapshot.json",
+      "bytes": 735,
+      "sha256": "2bed542a2610a6d66bc3c6a341abbd89824a44d4982723fb352a5be4a3252f47"
+    },
+    {
+      "path": "runs/first_demo_20261107/correlation.csv",
+      "bytes": 25274,
+      "sha256": "d9e7294c17555dca5a782c6ce1e3466fda5e44e54d217754989be739c36e15ce"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_activity.csv",
+      "bytes": 145955,
+      "sha256": "e2df1cb7d70e467d627c39fcd93377567ef9467c4083a5518cbbf7908c7b72dd"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_benchmark.csv",
+      "bytes": 148565,
+      "sha256": "5664d2be0483f094930c96a5238092391b93a469382e4e498d3b21e33cbe6292"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_momentum.csv",
+      "bytes": 146624,
+      "sha256": "51265fad231c7cea449a79c10bb1a1317e84010683230b73c28d757db717041f"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_multifactor.csv",
+      "bytes": 148402,
+      "sha256": "3849351c94d31b5f8015a805a51b08e07fdc06440db1c84c6eb6ff076cee6bc9"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_multifactor_cost0.csv",
+      "bytes": 154281,
+      "sha256": "76cc0c178d6d1b17721925bc681c6485a66f07f3046d13a235ea3ffe67e1a8b2"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_multifactor_cost2.csv",
+      "bytes": 147320,
+      "sha256": "63de8ddba7fd279143ee616ae83bac3ebdf0a43cb386a265124133966299eb08"
+    },
+    {
+      "path": "runs/first_demo_20261107/daily_volatility.csv",
+      "bytes": 150286,
+      "sha256": "894e112a7dc6ac688e83c312de1d21ba370e071f328bd1d3259a573ecf67ddf1"
+    },
+    {
+      "path": "runs/first_demo_20261107/data_quality.json",
+      "bytes": 728,
+      "sha256": "b1148f89d92ae94fd8fd996bf0c03b8de93b2550b57cfe202afc4ffaffde375b"
+    },
+    {
+      "path": "runs/first_demo_20261107/factors.csv",
+      "bytes": 11440603,
+      "sha256": "d5e05c1b5371c30a64684333a9f6828a30eedb9dc60087ebfdb0e492b685c041"
+    },
+    {
+      "path": "runs/first_demo_20261107/figures/SYN001_nav_drawdown.png",
+      "bytes": 250884,
+      "sha256": "84bc5c70f34eaf1a6d7ba6c9b0b6d05f3fa06fd1ff550534175c04165ae968f8"
+    },
+    {
+      "path": "runs/first_demo_20261107/groups.csv",
+      "bytes": 74432,
+      "sha256": "02952f3ae4374d16a58c5bc9bb4cbf7ec49658b85e7df28b9f3f6a5c9079616d"
+    },
+    {
+      "path": "runs/first_demo_20261107/ic.csv",
+      "bytes": 14435,
+      "sha256": "4adebdf6dc9e7c3399a158006ef5e0bccfd67d6d22c0edb06e626c44d43cf2dc"
+    },
+    {
+      "path": "runs/first_demo_20261107/ic_summary.csv",
+      "bytes": 1311,
+      "sha256": "30444e7409981c667ca1875013e5afca828c88306ea308390fe8fa5874b35676"
+    },
+    {
+      "path": "runs/first_demo_20261107/input/calendar.csv",
+      "bytes": 21930,
+      "sha256": "495cb65979393dee32ed520f7097cbc9c98aed87400e0c2f685cbafadf7810a3"
+    },
+    {
+      "path": "runs/first_demo_20261107/input/metadata.json",
+      "bytes": 556,
+      "sha256": "e43ac281f9e360fa1991c89d02d67fe166d43e07f4f3d7337ece9eb0c8150432"
+    },
+    {
+      "path": "runs/first_demo_20261107/input/prices.csv",
+      "bytes": 13404669,
+      "sha256": "e7fa8d62ddf8baa92f3d2b45c96096644f6c38fc13aa94e4c4acb07f57dd3b36"
+    },
+    {
+      "path": "runs/first_demo_20261107/input/universe.csv",
+      "bytes": 1753942,
+      "sha256": "2deb2208a998c326480639ecb3cf268013b1e8e126513cc79bc682db81767a0d"
+    },
+    {
+      "path": "runs/first_demo_20261107/labels.csv",
+      "bytes": 188307,
+      "sha256": "bb3e190694093f4abb7e44533f6dfaf5063e3279890ad652815b10fc05e40fdd"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson08_monthly_ic/annual_ic_summary.csv",
+      "bytes": 331,
+      "sha256": "484d03e0de35d9144d5b4bb550074f4f8cba08789d2ace8f05814649c30a4684"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson08_monthly_ic/ic_summary.csv",
+      "bytes": 337,
+      "sha256": "c32943c172b6ba7d22b4ee409d4e6df9ab784133f498f2a7f009f020320bdce5"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson08_monthly_ic/monthly_ic.csv",
+      "bytes": 4983,
+      "sha256": "43598bd295d2254d46e2e18902b4764738729cd79b5b8476e000c018cbf45289"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson08_monthly_ic/monthly_ic.png",
+      "bytes": 180777,
+      "sha256": "a640168815efd0ea24a0b169e1660ba11d356b459ef076576f3d64d38cf62e5f"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/group_membership.csv",
+      "bytes": 248507,
+      "sha256": "1b948c76a0ab8951a73517080c4a0e9da4dde206e6cfaae6b4c17b1417271b02"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/group_summary.csv",
+      "bytes": 590,
+      "sha256": "51fb9f9c17869aa1ee907489f491613e6fe59bcc555d4954a3f63766bce806e5"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/monthly_group_returns.csv",
+      "bytes": 17096,
+      "sha256": "21ae14be8fc3a2d2bc8785d96367ff5777a1bed4f53b0d825eb35c99378a6246"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/monthly_spread.csv",
+      "bytes": 10266,
+      "sha256": "c554de9e966f0bf58f872f90b05b65ccd8086a7a0622cda62805089051f0f533"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/quintile_returns.png",
+      "bytes": 300081,
+      "sha256": "cb76f143242a441daa708dd90997eb1f25e8a4b8a6353870b85058517ebb5d1e"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/spread_summary.csv",
+      "bytes": 325,
+      "sha256": "6ed39f5a3daf4cfecdac19eb4e47d20502f14ce9da0eff96dde505454e9c888c"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson09_quintile_returns/yearly_spread.csv",
+      "bytes": 217,
+      "sha256": "caac47a889acfc3e2dc2b980875e1582fe8da24ca42ae60e60d695cfca860d81"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson10_raw_factors/raw_factors.csv",
+      "bytes": 10354973,
+      "sha256": "c02bd60a7d1c58177f9d37a880c180d1add464f00d8f27394a1d57199b73d126"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson10_raw_factors/snapshot_2020-01-31.csv",
+      "bytes": 5819,
+      "sha256": "c4688b071cfc868fafab762125ecabb6475a528a01e16370817bc4ddca4a56ee"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson11_preprocessing/cross_section_stats.csv",
+      "bytes": 646,
+      "sha256": "b6d33b8a064846d9eaed038190ff5564c3d74625646750f8dfab20dd16ad5b29"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson11_preprocessing/factor_preprocessing.png",
+      "bytes": 138496,
+      "sha256": "f247452af5cecd892d911ab97ba77d657eec92f1451b171960843ba8268bce59"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson11_preprocessing/factor_steps.csv",
+      "bytes": 13114,
+      "sha256": "52c728d6f0368ed7e3310c6ca8758b12344014895bab104574a7d31a2348a92d"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson11_preprocessing/processed_snapshot.csv",
+      "bytes": 10244,
+      "sha256": "3b129836b1c7b1ed097572838c794b8b7de04e797dfb9afdd03baadb04a7e382"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson12_equal_weight_selection/composite_ranking.csv",
+      "bytes": 13936,
+      "sha256": "27b87e620af5d79d44feed86f0793dc0b923e1f22c183400dcbb7f66b313016c"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson12_equal_weight_selection/composite_selection.png",
+      "bytes": 147628,
+      "sha256": "b97d41ff64180d84bbf548f9036a8a6901b4c79f9e7a123e18abb4a85284e4f9"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson12_equal_weight_selection/target_portfolio.csv",
+      "bytes": 4004,
+      "sha256": "a10c40944b00bea4c0354641d3976ee9b2080223c2c1184f88631d86ee2a0453"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson13_first_execution/daily.csv",
+      "bytes": 222,
+      "sha256": "f81591228b4161490c234aedffffcd7ffd6f2f2220c70ff63d2a5cbaecd9d417"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson13_first_execution/ledger.csv",
+      "bytes": 503,
+      "sha256": "a3428fe6656115355aaad64d9924673fffe3856038630b6a0c1ddff53210cd55"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson13_first_execution/orders.csv",
+      "bytes": 989,
+      "sha256": "4e4b6d8f6c99b75712c90519fbd29592127bf68c2867061a33538de2fe8a5833"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson13_first_execution/positions.csv",
+      "bytes": 993,
+      "sha256": "1d8c7978c08d426816bcda85d64dfb2db59570e1da5c3417e469cd82036db22e"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson13_first_execution/trades.csv",
+      "bytes": 1383,
+      "sha256": "12a115314652ea3f6be3c238862fa328c071151194340d58ca4ff76463ac1fd5"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/daily.csv",
+      "bytes": 1995,
+      "sha256": "133de68aca9db0ae4be8353c347191c584ebe1cbe9e914608ee7fab7c794fac7"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/orders.csv",
+      "bytes": 2251,
+      "sha256": "cb408bd7de8b9af3ec03b23928e89095f14caf83079d559b8bb4951ed7a443b3"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/positions.csv",
+      "bytes": 19919,
+      "sha256": "599faa11045ac59510d0ec9ea67d8a3d1960163e0aecdb7f631d0083e808c3b0"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/rebalance_ledger.csv",
+      "bytes": 516,
+      "sha256": "7122771cc9d294ac17aacb3bcfcb4d9ff27b03aae5388d40c8893f8d698a341b"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/rebalance_weights.csv",
+      "bytes": 3171,
+      "sha256": "018e0bc671ce4abc991d3036966d7f272a948ee4c5f4d3fbb678355b46224135"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/scenario_note.json",
+      "bytes": 225,
+      "sha256": "7fe303d2c238f424c52a6eae688908102404ab40778c0cb34e9b5f6882bb131e"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/summary.json",
+      "bytes": 544,
+      "sha256": "0a40e0155d142e70e9e2600d33177bf3efab72e68f6b50aadd582445238d1d11"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/blocked_sell_demo/trades.csv",
+      "bytes": 3324,
+      "sha256": "1b6ab57a5761162ca717540d211f00678fd4aaeb313c29fcb056464fb9147090"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/daily.csv",
+      "bytes": 1996,
+      "sha256": "c2ebd76f13b80d8a7a7abd0910456422a21c5d13d86dcd2d483abe627ab17d59"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/daily_nav.png",
+      "bytes": 137402,
+      "sha256": "5bfe78cfda6b220835a0f176eff92071e4b8e4fa75d49e35063fb7ba54693adf"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/orders.csv",
+      "bytes": 2251,
+      "sha256": "aad1ca5246cd2f8a3ea43066631dcf071708f6b1039ef11a2b0dda05b0a77950"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/positions.csv",
+      "bytes": 19835,
+      "sha256": "fdade14eb7f7c16e81929107d6596594920d77404d936daec9ca3083f7f053c1"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/rebalance_ledger.csv",
+      "bytes": 516,
+      "sha256": "56f53c1c10af15cbba70c6c45407d957634ceebfe1b113f85e4d65a1d5ab75a6"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/rebalance_summary.json",
+      "bytes": 544,
+      "sha256": "b440e0604a285cf5bb42180c5828bbc139917c42c5c1dc6737ec0366f1c42f50"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/rebalance_weights.csv",
+      "bytes": 3133,
+      "sha256": "c66ea41974615ce9c8948cdeb74e1ad6dd7660ba0a74f319b3488cd1ded54a41"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/second_signal_targets.csv",
+      "bytes": 1706,
+      "sha256": "46217f02d665474c74cea02dff80f9a9d5effc73310847b535c18d6876f62567"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson14_daily_rebalance/trades.csv",
+      "bytes": 3476,
+      "sha256": "c90d318467c1b404abfe158be9aad81ef90a9804f716b19f9e386d4404e11d26"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/config_snapshot.json",
+      "bytes": 701,
+      "sha256": "d26077428b8973caad9815f4d360b3cfa9b7123aa2b4567b578decd9e0b7bd88"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/daily.csv",
+      "bytes": 300426,
+      "sha256": "ab5cf21340c6e5c10841a1b9d7393374645cb03bb8a955881d4af2d945966033"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/full_history_nav_drawdown.png",
+      "bytes": 293267,
+      "sha256": "192f2702df4a8e5d386add8015604555d58a3409392f43a3918c666da43307f6"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/metrics.csv",
+      "bytes": 139,
+      "sha256": "06ce8b400957b0645f3888acfe0e8229df071ca69c4c01b52fa312ce026a61ed"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/orders.csv",
+      "bytes": 99761,
+      "sha256": "718b06938ccf563e2b4c144e6d31d2fe8aefca3840f72051c625d3c76f5196a5"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/positions.csv",
+      "bytes": 1427245,
+      "sha256": "dfd26b4f254819ede3822a1ca14bace1774ab639a09998fe32b5e8f6599178b9"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/summary.json",
+      "bytes": 1066,
+      "sha256": "7eec9ab6e64efff25353767fac0b02633c98c27cc81aed08a13bb2c14dd28d09"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson15_full_backtest/trades.csv",
+      "bytes": 160702,
+      "sha256": "815908114fa679dc0e6ca21f64df7148ca6ef4cc147d36974d20a87485733626"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost0/daily.csv",
+      "bytes": 155084,
+      "sha256": "2a03f88da257608daf8bb4b536dee7796a95e005474e43d610ba9c736eec3f92"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost0/orders.csv",
+      "bytes": 230987,
+      "sha256": "2e5e624faa78ebabf81abc8091ed25d1bb96316dddcf219a1e953f5ba7b62e70"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost0/positions.csv",
+      "bytes": 5849615,
+      "sha256": "01f91e5a3a2f0802a69582005182b07d33416860f1e65238f419450993133b28"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost0/trades.csv",
+      "bytes": 283490,
+      "sha256": "a5e228f86de50861ee843a95da9795fbc5621f6987fb456b09ac33486c63c469"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost1/daily.csv",
+      "bytes": 148565,
+      "sha256": "5664d2be0483f094930c96a5238092391b93a469382e4e498d3b21e33cbe6292"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost1/orders.csv",
+      "bytes": 240863,
+      "sha256": "1064bda72ba9d33f9ce9c761608da63f07996c712001884ced9a47cc9426daa7"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost1/positions.csv",
+      "bytes": 5849773,
+      "sha256": "9503d4ebdcf94a3ab68a42426ee3736a8e9af26cee6729d3f742b33d44e81ef4"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost1/trades.csv",
+      "bytes": 389968,
+      "sha256": "4d4882490882dc2add01b82aec7359301390cec2066f2706cef8b3b2f65ccc63"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost2/daily.csv",
+      "bytes": 147001,
+      "sha256": "50f8d319b6a8c9215229526b48672b1b0287921e79b2d5d391ec5487e122f708"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost2/orders.csv",
+      "bytes": 240949,
+      "sha256": "931b0c8740d92ce6f0c8bb64beb8e0372b96ea1fb6eceb6f2dc2b97c88e9702f"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost2/positions.csv",
+      "bytes": 5848892,
+      "sha256": "a3e5c50bf96e65dbf5da72e296dfda45f5526d92b209ef6f9ab6432d9123f393"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost2/trades.csv",
+      "bytes": 387948,
+      "sha256": "98054c3d818da4af0ba5b9e9ab052f455e0c0a0980f40c65611d8654aba58e7b"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/benchmark_cost_comparison.png",
+      "bytes": 598737,
+      "sha256": "3f880ff90d84065dbbce2b83ec9a80522c7cfe1e471739cfbdbebf5c550d119a"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/comparison_paths.csv",
+      "bytes": 473844,
+      "sha256": "2a70247ee52122f5eee3dfed1fc635f2b1eb1c038b5797dfbe3403a923bc99eb"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/config_snapshot.json",
+      "bytes": 701,
+      "sha256": "d26077428b8973caad9815f4d360b3cfa9b7123aa2b4567b578decd9e0b7bd88"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/cost_impact.csv",
+      "bytes": 374,
+      "sha256": "c52f65cdb3755790499ddf535d7178b578b89192ae217cfd0f9dd8a5f50ead99"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/fee_schedule.csv",
+      "bytes": 87,
+      "sha256": "326dbf33b1b1c7bac894a99c1a30373676ed6012668b1ed930b560f4a442577e"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/methodology.json",
+      "bytes": 937,
+      "sha256": "86960d53be48dcdbf47a9a3a2804163b7c06d50e9890609325ded00051743d3e"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/metrics.csv",
+      "bytes": 1783,
+      "sha256": "39f099daf22cd8be345ee707ee5d33742f8fe16f1a860766f84a4121d9692ca1"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/relative_comparison.csv",
+      "bytes": 429,
+      "sha256": "4cc04ed8379777c34feb74cff143b842cbdc1ab265bac173cb99af38daa279ab"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/signal_pools.csv",
+      "bytes": 27017,
+      "sha256": "5c36948be4ed9d1ad251a163815158f52c70a9aa400867ec809b69752324078d"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost0/daily.csv",
+      "bytes": 154281,
+      "sha256": "76cc0c178d6d1b17721925bc681c6485a66f07f3046d13a235ea3ffe67e1a8b2"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost0/orders.csv",
+      "bytes": 94675,
+      "sha256": "7be26ae0c0d5ac772915c00171bb587f0736bf7ab1cc845ec2e8c33c3dee1167"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost0/positions.csv",
+      "bytes": 1429864,
+      "sha256": "d3abe6705f1d1e8126b5726e46e6a62ff2aa1f1d08cf2ffe82ef177bd0e0fe5b"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost0/trades.csv",
+      "bytes": 118031,
+      "sha256": "45a755932ad48068a17000d8aaded9673875439308b41764a5d06381000a5b39"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost1/daily.csv",
+      "bytes": 148402,
+      "sha256": "3849351c94d31b5f8015a805a51b08e07fdc06440db1c84c6eb6ff076cee6bc9"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost1/orders.csv",
+      "bytes": 99761,
+      "sha256": "718b06938ccf563e2b4c144e6d31d2fe8aefca3840f72051c625d3c76f5196a5"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost1/positions.csv",
+      "bytes": 1427245,
+      "sha256": "dfd26b4f254819ede3822a1ca14bace1774ab639a09998fe32b5e8f6599178b9"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost1/trades.csv",
+      "bytes": 160702,
+      "sha256": "815908114fa679dc0e6ca21f64df7148ca6ef4cc147d36974d20a87485733626"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost2/daily.csv",
+      "bytes": 147320,
+      "sha256": "63de8ddba7fd279143ee616ae83bac3ebdf0a43cb386a265124133966299eb08"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost2/orders.csv",
+      "bytes": 99851,
+      "sha256": "acce8f5e66d5c24a132c0131f18516573f9fe303ef0f2a236e117620fdd31246"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost2/positions.csv",
+      "bytes": 1426094,
+      "sha256": "403e509098407ebfc9289cb3b4c656c5241a88bd35c6195a26aa000fe44d3cf6"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson16_benchmark_cost/strategy_cost2/trades.csv",
+      "bytes": 159663,
+      "sha256": "2ac926cd48101a8f354d8bcf29c3c7191cc46665c07abb7df39adc2314639ecb"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/boundaries.csv",
+      "bytes": 829,
+      "sha256": "39390d70b7522246fed5ebe57a4a3299257b6b442604b3b8fcbf35829266a5ef"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/comparison.csv",
+      "bytes": 758,
+      "sha256": "d4be68187bd572f75de60937b280cb965ab63d78933f6e80098ff1f3c2187d96"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/config_snapshot.json",
+      "bytes": 701,
+      "sha256": "d26077428b8973caad9815f4d360b3cfa9b7123aa2b4567b578decd9e0b7bd88"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/methodology.json",
+      "bytes": 1861,
+      "sha256": "ea26928c16a60b3018a18a010cfabc9fe52bb92926b49d87afbec284ec754a61"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/metrics.csv",
+      "bytes": 1835,
+      "sha256": "ba4c0c4d56449f06505909cfeb1cdc17398c7deeac224881056857d526c57ccf"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/period_paths.csv",
+      "bytes": 527746,
+      "sha256": "70b2067e4665fcd412d25dce11cc131fb9499665afe061e65888ab64844c740a"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/reconciliation.csv",
+      "bytes": 351,
+      "sha256": "f4c704fe73c1afef42d003dbc99756160b89db58cf90a67eb82bd98ff7d56d5c"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/relative_paths.csv",
+      "bytes": 153651,
+      "sha256": "52043c286d9da33b4d1f1f0b8ea577dfbad4b62203d32914f3693101f11399e3"
+    },
+    {
+      "path": "runs/first_demo_20261107/lesson17_split_stability/split_stability.png",
+      "bytes": 352343,
+      "sha256": "05162772fcda50efd3acb98a1be39560b9bcce2d903b21df11958e2c388d5e2c"
+    },
+    {
+      "path": "runs/first_demo_20261107/manifest.json",
+      "bytes": 2254,
+      "sha256": "47936cc5bcda71298a8879c0982270ce8b0adf17bb3570d65113f4f1cc5a3b2d"
+    },
+    {
+      "path": "runs/first_demo_20261107/metrics.csv",
+      "bytes": 5186,
+      "sha256": "b7c0164095d05963d26fee073d9d1b3723a3533b9d9870fe53278f4fcd007221"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_activity.csv",
+      "bytes": 104454,
+      "sha256": "a301d22ed448ad72a4ae30fbf16e8a9ab9b1b5b0a9da5f3f637d5e2efb90b3c6"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_benchmark.csv",
+      "bytes": 240863,
+      "sha256": "1064bda72ba9d33f9ce9c761608da63f07996c712001884ced9a47cc9426daa7"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_momentum.csv",
+      "bytes": 102010,
+      "sha256": "269c5d0f96671c93f55950da877e55f4f6ce40fc28af3d966a6243a91cd7d027"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_multifactor.csv",
+      "bytes": 99761,
+      "sha256": "718b06938ccf563e2b4c144e6d31d2fe8aefca3840f72051c625d3c76f5196a5"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_multifactor_cost0.csv",
+      "bytes": 94675,
+      "sha256": "7be26ae0c0d5ac772915c00171bb587f0736bf7ab1cc845ec2e8c33c3dee1167"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_multifactor_cost2.csv",
+      "bytes": 99851,
+      "sha256": "acce8f5e66d5c24a132c0131f18516573f9fe303ef0f2a236e117620fdd31246"
+    },
+    {
+      "path": "runs/first_demo_20261107/orders_volatility.csv",
+      "bytes": 83312,
+      "sha256": "ed6cd062ab5c9a22d914131e8771106dd0748d7696e6e78d36d0fab115792a9a"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_activity.csv",
+      "bytes": 1446271,
+      "sha256": "7b07f99db6f7c5e1b838aa9810c51d1c1a95c0e107a56236524a535762f1b466"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_benchmark.csv",
+      "bytes": 5849773,
+      "sha256": "9503d4ebdcf94a3ab68a42426ee3736a8e9af26cee6729d3f742b33d44e81ef4"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_momentum.csv",
+      "bytes": 1441899,
+      "sha256": "99584ca25d8998ce127e81c54b5b201c30054d5a00626e9f4a19cb223c9cdcd6"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_multifactor.csv",
+      "bytes": 1427245,
+      "sha256": "dfd26b4f254819ede3822a1ca14bace1774ab639a09998fe32b5e8f6599178b9"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_multifactor_cost0.csv",
+      "bytes": 1429864,
+      "sha256": "d3abe6705f1d1e8126b5726e46e6a62ff2aa1f1d08cf2ffe82ef177bd0e0fe5b"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_multifactor_cost2.csv",
+      "bytes": 1426094,
+      "sha256": "403e509098407ebfc9289cb3b4c656c5241a88bd35c6195a26aa000fe44d3cf6"
+    },
+    {
+      "path": "runs/first_demo_20261107/positions_volatility.csv",
+      "bytes": 1458506,
+      "sha256": "4c97ba9d14d4be3ff659e0d892ded6ffe011cae674090c215a0ba8d963fc9616"
+    },
+    {
+      "path": "runs/first_demo_20261107/report.html",
+      "bytes": 159008,
+      "sha256": "531bc3489310e1260886f2e8651d0d789f7444ee16588ca8558d48d5957da5cb"
+    },
+    {
+      "path": "runs/first_demo_20261107/research.sqlite",
+      "bytes": 38703104,
+      "sha256": "8b40f609c5fe15141b419199760ca86f39466871462e66c46e8a555b233d0815"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_activity.csv",
+      "bytes": 167027,
+      "sha256": "82cc785ae1e9111dce052b85e46889fb06334271cd0f8bba45c65d1f8b643e07"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_benchmark.csv",
+      "bytes": 389968,
+      "sha256": "4d4882490882dc2add01b82aec7359301390cec2066f2706cef8b3b2f65ccc63"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_momentum.csv",
+      "bytes": 164928,
+      "sha256": "01adc68719eb450571a7c346e3229bfb3474ad3ad99be4bdc78d9d853dfb9dbc"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_multifactor.csv",
+      "bytes": 160702,
+      "sha256": "815908114fa679dc0e6ca21f64df7148ca6ef4cc147d36974d20a87485733626"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_multifactor_cost0.csv",
+      "bytes": 118031,
+      "sha256": "45a755932ad48068a17000d8aaded9673875439308b41764a5d06381000a5b39"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_multifactor_cost2.csv",
+      "bytes": 159663,
+      "sha256": "2ac926cd48101a8f354d8bcf29c3c7191cc46665c07abb7df39adc2314639ecb"
+    },
+    {
+      "path": "runs/first_demo_20261107/trades_volatility.csv",
+      "bytes": 132831,
+      "sha256": "8f7ed4a7f37f485dc7611241a8adcca37a07abc108fdd99c5958cd1c98b4ed89"
+    },
+    {
+      "path": "runs/lesson18_real_market/accounting_audit.csv",
+      "bytes": 506,
+      "sha256": "3217a4c93d5a1bcb1e06a9016cfcb8fdf9d17ce8f96100fb1bb39758832fa95c"
+    },
+    {
+      "path": "runs/lesson18_real_market/data_quality.json",
+      "bytes": 1363,
+      "sha256": "cb69e87dedf583b8a59e074b87a7b3e54346cad8d8ef4e55b2bab5445b7c3701"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/config_snapshot.json",
+      "bytes": 734,
+      "sha256": "d8ed3db03f11a7ceaf150df5ad96d4468edcce8654395d2d5e98307cfac7f0ed"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/correlation.csv",
+      "bytes": 11497,
+      "sha256": "4b8d605790f793015c5d5631d9ca039b7a3bdff706f53b36b7ebb4f8df2f530a"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_activity.csv",
+      "bytes": 67648,
+      "sha256": "aecd0ec4738f58ddae956362cec6c1195f71937c6ea557e858b9e4e82115c762"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_benchmark.csv",
+      "bytes": 68827,
+      "sha256": "2fb4a9fcd68310c01ec53cf30c45dbe00da14bae2b541caadc9770fd0338493c"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_momentum.csv",
+      "bytes": 70431,
+      "sha256": "5f9a513e1a8c1456d2007f59b8666cc42dcbf8bbee562f7f2c40a9e03e8329cb"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_multifactor.csv",
+      "bytes": 66398,
+      "sha256": "8656cbc1e5054ad85650bb35345e7a73d991d0d95d5992a2ec1e302efe115977"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_multifactor_cost0.csv",
+      "bytes": 72552,
+      "sha256": "47993bcecf2f904211bc999156c628ffe254ca635f993f9cf4e75d6a3fe4ced7"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_multifactor_cost2.csv",
+      "bytes": 66048,
+      "sha256": "4d582b86792318dbc3e6280e520ec698f7b23778a6f0a69e589f46748821ef4a"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/daily_volatility.csv",
+      "bytes": 67930,
+      "sha256": "b07004a901bc6eeb7c72232f45e7d66250f3e83934a36df18f4afda4c453fac4"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/data_quality.json",
+      "bytes": 1130,
+      "sha256": "d04c56a59f1825b4d45215caa4d26a2db17c7802f8717edb8bcb382469ca6185"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/factors.csv",
+      "bytes": 7949560,
+      "sha256": "8bd3199b062c358a5060e97e602b7aea2791737c4f8cbe732586fdce8bd97935"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/groups.csv",
+      "bytes": 33714,
+      "sha256": "ef6c73205e0b6751dade5cfbff366d9dd215d56963ca7c6f3b555128dd1036d6"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/ic.csv",
+      "bytes": 6528,
+      "sha256": "1ae1411d06e8555d8b78e8e576aeaa9f56285bcebd6f9e21f7b915658c2b31d5"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/ic_summary.csv",
+      "bytes": 1309,
+      "sha256": "fd21e81b87da38a933212906eec97e743bf8c0271ab1af8789023741a84bc032"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/labels.csv",
+      "bytes": 64111,
+      "sha256": "54f7a35e65a31e8618940d74c34e5e4641793a28c9b656753ff07ffd41bcefbb"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/manifest.json",
+      "bytes": 8867,
+      "sha256": "5ae1dd1eee9823ad63d5d7bc1d3d3d86cb265f0582eaa820989a3001f2550897"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/metrics.csv",
+      "bytes": 5125,
+      "sha256": "a3c81926aeeadce75292a9f92743ee919bb4929dfe901441641436a71929c0a4"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_activity.csv",
+      "bytes": 50662,
+      "sha256": "416b32e48f1fd389c1f400715a1cc9cf81dede74bbcd86c9051cfb3468012a4b"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_benchmark.csv",
+      "bytes": 90558,
+      "sha256": "74a62c44cd6b98165a175f3a0e954bab1c53c321c04522820b11e507816198d5"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_momentum.csv",
+      "bytes": 46068,
+      "sha256": "8709f3f0c6b5745a2e8015470b6dce5ece9052b5c7c5f2cb61a9ba50129df989"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_multifactor.csv",
+      "bytes": 46680,
+      "sha256": "796a9ccb0a7db07b1ea8698971f13e618df47d8bd467579711ac3c919ce2d9d3"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_multifactor_cost0.csv",
+      "bytes": 43589,
+      "sha256": "a3eb9415893dd9bba56200c8da71fcdc2e0eb39b63134a41fe092cfb5d5826ae"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_multifactor_cost2.csv",
+      "bytes": 46662,
+      "sha256": "72b798b5d23614fba3e54e22e894a849140bbf9261d10f8e93042154598348d3"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/orders_volatility.csv",
+      "bytes": 39335,
+      "sha256": "cd71472183e197d2d6146860960ef0c95dedd75631720585623a60c14b8faa24"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_activity.csv",
+      "bytes": 584344,
+      "sha256": "08839eea1004c6b49aa906f5ac0caaa2ae72f9f2bbce5746bb8c92c5e6a86929"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_benchmark.csv",
+      "bytes": 1764010,
+      "sha256": "0d7d0ded785a4aa6c1d09354d98be7f6ba6b199882cab9309efe61ec1e84d4a3"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_momentum.csv",
+      "bytes": 583680,
+      "sha256": "3e6e6abcd02c76dfbb6e8ca22c4facf3c62848b4b6468ea0c07c6c3e501614a3"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_multifactor.csv",
+      "bytes": 585842,
+      "sha256": "445c1237b7b6eb7ec0fee382e393500cd9b41396d755b427119d7a724f0adb47"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_multifactor_cost0.csv",
+      "bytes": 585648,
+      "sha256": "dea636cc878ce410cbbd052618712fd4deac03956e8d009ec2a889671f9001af"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_multifactor_cost2.csv",
+      "bytes": 585172,
+      "sha256": "ec28463412b6d780fcd8c5342cc8b7393cf6f1b917b70e5d7bd7748763a5bf1d"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/positions_volatility.csv",
+      "bytes": 585150,
+      "sha256": "9111aa922bf60ca46fdb588d587263140461e50cd916bebd4c252f01d325f375"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/report.html",
+      "bytes": 95870,
+      "sha256": "5d5e2133b68ea5ff6256d4a5c0f5213a83fa40d6eb677f7771d68a38c313d036"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/research.sqlite",
+      "bytes": 21831680,
+      "sha256": "e41d600ed41ee82cdcddb6af8e184baec4a9277aa351e6326f11a83b4bc94aa7"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_activity.csv",
+      "bytes": 78825,
+      "sha256": "dd18489e558554f0571e45fddd98d791cc874fd6c87f4419a291e179eab1ccf3"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_benchmark.csv",
+      "bytes": 141725,
+      "sha256": "00618ad2f84fb46ae25bbc24ed359b25d6d1f3656a34d4fcd23224ab1c78db9b"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_momentum.csv",
+      "bytes": 73283,
+      "sha256": "4fd8e0e607088abe534483d891b60c4b68e44d83495d171aa56bce5cd6adbcf7"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_multifactor.csv",
+      "bytes": 73497,
+      "sha256": "d4242103046bed64db360044373001fd1a4b662b94c09830060c5d77f8d1ca72"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_multifactor_cost0.csv",
+      "bytes": 49456,
+      "sha256": "118696b674da6e6ed73fa1374d1dcbc2639aa6c8010b364c04c6c4f8d789bf45"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_multifactor_cost2.csv",
+      "bytes": 73469,
+      "sha256": "938e51edd0599d7f086186d64aeccc675f589853a9452b53ae67fa00277b0b06"
+    },
+    {
+      "path": "runs/lesson18_real_market/experiment/trades_volatility.csv",
+      "bytes": 60981,
+      "sha256": "d444832290d6fcce0d1277689589b58aa1fefb4ea0ef6305e2e4c640d42e167a"
+    },
+    {
+      "path": "runs/lesson18_real_market/methodology.json",
+      "bytes": 2326,
+      "sha256": "482dcf92c1a2125ef2e89772df1a03cf0f42d42f2c0558f487203b5d5b1629e6"
+    },
+    {
+      "path": "runs/lesson18_real_market/missing_fixed_pool_rows.csv",
+      "bytes": 1327,
+      "sha256": "8bbe5bcd312eb23cf952cc49882b424801943a78b65ceb9fbaec9672a023544f"
+    },
+    {
+      "path": "runs/lesson18_real_market/normalization_checks.csv",
+      "bytes": 1530,
+      "sha256": "a481cfbf2d61e0aa66ad1288268cdd9078f030bc08670afc3e980542ec1bdcfd"
+    },
+    {
+      "path": "runs/lesson18_real_market/real_market_nav_drawdown.png",
+      "bytes": 358615,
+      "sha256": "61ec67c9d67a1245d412b835107906bdad411b5fe5e7a81d4e77cffa046815ec"
+    },
+    {
+      "path": "runs/lesson18_real_market/sample_000001.csv",
+      "bytes": 621,
+      "sha256": "9027ecfab074c25ff302ead94f780079f0ecf2bfbc36a206cc4298f777e6312c"
+    },
+    {
+      "path": "runs/lesson18_real_market/source_hash_checks.csv",
+      "bytes": 9260,
+      "sha256": "e4c5a97ef462879fcc11af48392beca9075551304b01caed0eda7f766b1dc0ae"
+    },
+    {
+      "path": "runs/lesson18_real_market/strategy_benchmark_metrics.csv",
+      "bytes": 1697,
+      "sha256": "895b7ff117cae0f94fe56489d463fbdf3840a1792268e10d23e3fcc3dde67f52"
+    },
+    {
+      "path": "runs/lesson18_real_market/yearly_coverage.csv",
+      "bytes": 235,
+      "sha256": "2b89db15b48e8f9d8b85898bc80ff9e7f48715f9fc641c532463d332fefc325b"
+    },
+    {
+      "path": "runs/lesson19_delivery/environment.json",
+      "bytes": 391,
+      "sha256": "ecd51a81cee0930e6a3def95f89a3b683578b0c5ddbb4d6bd4c02c7baace3eaa"
+    },
+    {
+      "path": "runs/lesson19_delivery/tests.log",
+      "bytes": 5048,
+      "sha256": "1a8e069778e72c972947a4ccadc431b2d472647d819a736e82fbc3afb15eb7d9"
+    },
+    {
+      "path": "runs/lesson19_delivery/verification.json",
+      "bytes": 3886,
+      "sha256": "e1cd1f217f08026ab471c8e3f9ac6438ffcd45b300f59e64b972dc3d2fda4c98"
+    },
+    {
+      "path": "sql/worksheet.sql",
+      "bytes": 3762,
+      "sha256": "998c19d64f903b83050997332fe2c96edea5ea06183aac56410f57ff8c8e8d6b"
+    },
+    {
+      "path": "src/ashare_lab/__init__.py",
+      "bytes": 96,
+      "sha256": "175035b3409795a098a225be99a85a1d24cb7309f74f2f735501429d019558e3"
+    },
+    {
+      "path": "src/ashare_lab/__main__.py",
+      "bytes": 61,
+      "sha256": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a"
+    },
+    {
+      "path": "src/ashare_lab/backtest.py",
+      "bytes": 16096,
+      "sha256": "609ac414e1855adf84f8d4bb7b58db8f2fdde64e0d21da0103f2d0bc661f2173"
+    },
+    {
+      "path": "src/ashare_lab/cli.py",
+      "bytes": 8761,
+      "sha256": "45a16743274d143619a895b381d0fd567e008193f06e50c890c741120d5d8e8e"
+    },
+    {
+      "path": "src/ashare_lab/config.py",
+      "bytes": 2163,
+      "sha256": "6adfe2b205ad9ce2200703ac0d636a150b9b06ef4581336833033511aeff60c7"
+    },
+    {
+      "path": "src/ashare_lab/data.py",
+      "bytes": 14316,
+      "sha256": "6a4f2b6cda7eb09aedd4383ceaa2138ca3408f3085259ac28dbc613122e7837b"
+    },
+    {
+      "path": "src/ashare_lab/factors.py",
+      "bytes": 7636,
+      "sha256": "aa8a6f8a8b363a15d91c2b49a74870c263d89252be6bf90d5f8c5788a3a69be8"
+    },
+    {
+      "path": "src/ashare_lab/report.py",
+      "bytes": 39125,
+      "sha256": "61472b19135514acdb4c36ffc51b02ceaab221ea3076aca14748ffe2f9b0b286"
+    },
+    {
+      "path": "src/ashare_lab/research.py",
+      "bytes": 8127,
+      "sha256": "19d6302179c849033914b38b25b749a9e4060e6527facc7a7f0d5326224ae3cf"
+    },
+    {
+      "path": "tests/test_backtest.py",
+      "bytes": 5947,
+      "sha256": "b4da81fb3a5e9e708a6b22270ad6b4a9729cebebc4832f0e2e85ef3670194a6c"
+    },
+    {
+      "path": "tests/test_data.py",
+      "bytes": 9217,
+      "sha256": "9e7c9b22b89bae769ceb0b113e6ac295cd00d6c56fd30c77d3d8f0d36adc16fa"
+    },
+    {
+      "path": "tests/test_factors_research.py",
+      "bytes": 9462,
+      "sha256": "bd9e5fa46bb0ed796b38093f37b4faf2a22de7d5770b6b9cee46e5f541cf0bea"
+    }
+  ]
+}

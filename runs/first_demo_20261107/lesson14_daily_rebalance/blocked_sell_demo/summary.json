@@ -1,0 +1,18 @@
+{
+  "date": "2020-03-02",
+  "previous_close_equity": 1030850.857157449,
+  "before_open_equity": 1032009.4044407138,
+  "after_open_equity": 1031130.0285838624,
+  "close_equity": 1030491.6715845452,
+  "nav": 1.0304916715845451,
+  "daily_return": -0.00034843602293188614,
+  "cash": 2.9103830456733704e-11,
+  "commission": 251.21727627524956,
+  "sell_tax": 209.46290027351188,
+  "slippage": 418.69568030266396,
+  "total_cost": 879.3758568514254,
+  "sell_count": 8,
+  "buy_count": 6,
+  "rejected_orders": 1,
+  "holdings_count": 11
+}

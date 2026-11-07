@@ -1,0 +1,7 @@
+{
+  "status": "aborted_before_metrics",
+  "config": "configs/baseline.json",
+  "dataset": "data/market_teaching",
+  "error": "Missing held price row: 600009 on 2021-06-10",
+  "action": "Do not fabricate valuation or remove stock. Freeze 2023-2025 complete-coverage teaching experiment before inspecting performance. Full-range empirical work remains pending verified suspension valuation/corporate-action handling."
+}

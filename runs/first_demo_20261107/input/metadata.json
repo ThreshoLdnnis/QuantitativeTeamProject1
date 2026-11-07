@@ -1,0 +1,13 @@
+{
+  "kind": "synthetic",
+  "source": "numpy.random.default_rng; artificial teaching fixture",
+  "seed": 20261102,
+  "n_symbols": 40,
+  "price_adjustment": "none; no corporate actions simulated",
+  "universe": "synthetic fixed population known at start",
+  "limitations": [
+    "SIMULATED DATA: not A-share observations; no empirical investment conclusion is possible.",
+    "Calendar uses weekdays, including Chinese holidays; not an exchange calendar.",
+    "Artificial flags test blocked execution; they are not observed market events."
+  ]
+}

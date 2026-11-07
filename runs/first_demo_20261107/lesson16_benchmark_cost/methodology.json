@@ -1,0 +1,14 @@
+{
+  "source": "synthetic teaching data; weekday calendar, not an A-share exchange calendar",
+  "start": "2020-01-01",
+  "end": "2025-12-31",
+  "annual_sessions": 252,
+  "benchmark": "monthly target equal weight across the same finite-composite pool, score_column=None",
+  "strategy": "top 10 by composite from that same pool, monthly target equal weight",
+  "execution": "next-session open, sell first, cash-scaled buys, supplied status flags",
+  "fees": "fixed teaching bps; multiplier scales commission, slippage and sell tax together",
+  "relative_return": "strategy NAV / same-cost benchmark NAV - 1; not a tradable long-short return",
+  "return_gap": "strategy total return - benchmark total return; multiply by 100 for percentage points",
+  "cost_comparison": "separately rerun paths; terminal wealth gap includes costs and changed investment paths",
+  "terminal_valuation": "last close; no hypothetical liquidation"
+}
