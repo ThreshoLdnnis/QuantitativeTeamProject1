@@ -1,4 +1,4 @@
-"""把我的全部教学内容、数据、数据库和运行结果保存为固定版本快照。"""
+"""把全部教学内容、数据、数据库和运行结果保存为固定版本快照。"""
 import hashlib
 import json
 from pathlib import Path
@@ -19,7 +19,7 @@ def main():
             bundle.write(path, f"{ROOT.name}/{path.relative_to(ROOT).as_posix()}")
     with zipfile.ZipFile(archive) as bundle:
         if bundle.testzip() is not None:
-            raise ValueError("我的完整快照 ZIP 校验失败。")
+            raise ValueError("完整快照 ZIP 校验失败。")
     digest = hashlib.sha256()
     with archive.open("rb") as stream:
         for block in iter(lambda: stream.read(1024 * 1024), b""):

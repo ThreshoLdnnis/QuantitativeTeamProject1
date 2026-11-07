@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-11-07T13:10:08.089331+00:00",
+  "checked_at_utc": "2026-11-07T15:01:18.264268+00:00",
   "readmes": 20,
   "executed_notebooks": 20,
   "executed_code_cells": 136,
   "png_outputs": 13,
-  "narrative_chinese_characters": 45879,
-  "voice": "first person; instructional prose contains no 你/我们/助手",
+  "narrative_chinese_characters": 43771,
+  "voice": "natural learning narrative; first person used selectively for personal choices and reflections",
   "status": "passed"
 }

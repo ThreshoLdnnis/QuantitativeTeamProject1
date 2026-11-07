@@ -1,4 +1,4 @@
-"""我的发布整理：校验文档、区分可浏览文件和完整快照、生成索引。"""
+"""发布整理：校验文档、区分可浏览文件和完整快照、生成索引。"""
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -49,22 +49,22 @@ def prepare():
     for path in sorted(large):
         data = path.read_bytes()
         table.append(f"| `{path.relative_to(ROOT).as_posix()}` | {len(data)/1024**2:.3f} | `{hashlib.sha256(data).hexdigest()}` |")
-    text = """# 我的完整数据与结果索引
+    text = """# 完整数据与结果索引
 
-我把全部代码、每步 README、每步 Notebook、图表和小型结果表直接放在仓库中浏览。完整数据快照、SQLite 和大型中间表放在同版本 Release 的完整 ZIP 中，保留项目原有相对目录。
+全部代码、每步 README、每步 Notebook、图表和小型结果表均可在仓库中直接浏览。完整数据快照、SQLite 和大型中间表放在同版本 Release 的完整 ZIP 中，保留项目原有相对目录。
 
-- [v1.0.0 完整 Release](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.0)
-- [完整快照 ZIP](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.0/QuantitativeTeamProject1-full-snapshot.zip)
-- [ZIP 的 SHA-256](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.0/QuantitativeTeamProject1-full-snapshot.zip.sha256)
+- [v1.0.1 完整 Release](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.1)
+- [完整快照 ZIP](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.1/QuantitativeTeamProject1-full-snapshot.zip)
+- [ZIP 的 SHA-256](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.1/QuantitativeTeamProject1-full-snapshot.zip.sha256)
 
-我在仓库根目录执行 `python publication/restore_snapshot.py`，就会核对 ZIP 哈希并恢复 `data/` 与 `runs/`。它不改写当前源码或学习文档。我也可以手动把完整 ZIP 解压到仓库父目录，合并其中的 `QuantitativeTeamProject1/`。
+在仓库根目录执行 `python publication/restore_snapshot.py`，脚本会核对 ZIP 哈希并恢复 `data/` 与 `runs/`，保留当前源码与学习文档。也可手动把完整 ZIP 解压到仓库父目录，合并其中的 `QuantitativeTeamProject1/`。
 
-正文中的大型表格链接指向本索引；每一行路径都是完整 ZIP 中可以查到的实际文件。图表和 Notebook 静态输出始终直接可见。恢复完整快照后，我可以离线运行既有真实数据实验；重新取数是另一个需要记录新来源和时间的过程。
+正文中的大型表格链接指向本索引；每一行路径都是完整 ZIP 中可以查到的实际文件。图表和 Notebook 静态输出可直接阅读。恢复完整快照后，既有真实数据实验可以离线运行；重新取数则需要另行记录来源和下载时间。
 
 """ + "\n".join(table) + "\n"
     (ROOT / "publication/ASSET_INDEX.md").write_text(text, encoding="utf-8")
-    data_note = ("## 我的数据准备说明\n\n我在本页记录的是完整快照上的实际运行。"
-                 "如果我从 GitHub 克隆源码，我先在仓库根目录运行 `python publication/restore_snapshot.py`，"
+    data_note = ("## 数据准备\n\n本页内容来自完整快照上的实际运行。"
+                 "从 GitHub 克隆源码后，先在仓库根目录运行 `python publication/restore_snapshot.py`，"
                  "恢复同版本的 `data/` 与 `runs/`，再执行本步。"
                  "[完整数据与大型结果索引](../../publication/ASSET_INDEX.md)保留全部路径和哈希；"
                  "本页图表与 Notebook 已保存输出可直接阅读。\n")
@@ -107,7 +107,7 @@ def prepare():
             return match.group(0)
         content = re.sub(r'(href=["\'])([^"\']+)(["\'])', html_link, content)
         path.write_text(content, encoding="utf-8")
-    ignore = ".venv/\n__pycache__/\n*.pyc\n*.egg-info/\n.ipynb_checkpoints/\n*.sqlite\n\n# 我的大型快照保留在同版本 Release\n"
+    ignore = ".venv/\n__pycache__/\n*.pyc\n*.egg-info/\n.ipynb_checkpoints/\n*.sqlite\n\n# 大型快照保留在同版本 Release\n"
     ignore += "\n".join("/" + path.relative_to(ROOT).as_posix() for path in sorted(large) if path.suffix != ".sqlite") + "\n"
     (ROOT / ".gitignore").write_text(ignore, encoding="utf-8")
     return large
@@ -118,17 +118,13 @@ def verify_content():
     notebooks = sorted(ROOT.glob("lessons/*/lesson.ipynb"))
     assert len(lessons) == len(notebooks) == 20
     assert [int(path.parent.name[:2]) for path in lessons] == list(range(20))
-    explanations, issues = 0, []
+    explanations = 0
     for path in lessons:
         content = path.read_text(encoding="utf-8")
         narrative = content.split("<!-- GENERATED_FULL_SOURCE_START -->")[0]
         prose = re.sub(r"```.*?```", "", narrative, flags=re.S)
         explanations += len(re.findall(r"[\u4e00-\u9fff]", prose))
-        if "我" not in prose or any(word in prose for word in ["你", "我们", "助手"]):
-            issues.append(path.relative_to(ROOT).as_posix())
         assert content.count("```") % 2 == 0
-    if issues:
-        raise ValueError("第一人称文案需要检查：" + str(issues))
     code_cells, image_outputs = 0, 0
     for path in notebooks:
         notebook = nbformat.read(path, as_version=4)
@@ -143,7 +139,7 @@ def verify_content():
     record = dict(checked_at_utc=datetime.now(timezone.utc).isoformat(), readmes=len(lessons),
                   executed_notebooks=len(notebooks), executed_code_cells=code_cells,
                   png_outputs=image_outputs, narrative_chinese_characters=explanations,
-                  voice="first person; instructional prose contains no 你/我们/助手", status="passed")
+                  voice="natural learning narrative; first person used selectively for personal choices and reflections", status="passed")
     (ROOT / "publication/validation.json").write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
     return record
 

@@ -9,12 +9,12 @@
     ".git",
     "*.zip"
   ],
-  "file_count": 354,
+  "file_count": 356,
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 1421,
-      "sha256": "94adf8abc5a1925fea000a1864f9bf44886bfaf375e555754d70c04c79df3916"
+      "bytes": 1415,
+      "sha256": "d2756caae0c78d0b135ec4eeefe3e1dcc7f26f3e5320f62997944efffabae960"
     },
     {
       "path": "configs/baseline.json",
@@ -353,8 +353,8 @@
     },
     {
       "path": "docs/01_从零到一实施手册.md",
-      "bytes": 8971,
-      "sha256": "222dfdef6bab00df335c91281e357327b4ed852eff4cadee66286eb4e5e97614"
+      "bytes": 8966,
+      "sha256": "b6016c7bd25f3726e9f8be7560148b2e03c61a2b1b28f6ac70e49253aadfe1ed"
     },
     {
       "path": "docs/02_研究设计与边界.md",
@@ -368,18 +368,18 @@
     },
     {
       "path": "docs/04_答辩与自查.md",
-      "bytes": 5068,
-      "sha256": "ff8c1be684f8d9d94cbb61259ad4edff1085cdcac5f1054d961058c5841bf55f"
+      "bytes": 5090,
+      "sha256": "d188640d0ec87e4186e35797b5b267920bd164dd12e3174a93f2d91e57d08eeb"
     },
     {
       "path": "docs/05_本次构建与验证.md",
-      "bytes": 2639,
-      "sha256": "46cc644b918ae14a435545d96dbd1036ce2bd0890bf2bc3288946c207a7f762b"
+      "bytes": 2668,
+      "sha256": "d8b20e69293b81e0b53adbf45ae321893d32e2da9e301331bc6403e994db933f"
     },
     {
       "path": "docs/06_19课复现与交付指南.md",
-      "bytes": 14823,
-      "sha256": "5a23741e613e96c2efa64d31aafb5638a196049c187c229602c5c48846afacb0"
+      "bytes": 14817,
+      "sha256": "4f0b2b36ae903b01fa9c4a230bb83048890401711d234a7cc4d160f3bee36362"
     },
     {
       "path": "docs/07_教学项目总览.md",
@@ -498,218 +498,223 @@
     },
     {
       "path": "lessons/00_environment/lesson.ipynb",
-      "bytes": 16444,
-      "sha256": "c252c9721101faa14fedc403aab6fcd21b326478436a674d46f29511e768c7bf"
+      "bytes": 16334,
+      "sha256": "187334a1597936837003c91dd32ccd73801b261fb931294c60de0f00bbbdd941"
     },
     {
       "path": "lessons/00_environment/README.md",
-      "bytes": 11260,
-      "sha256": "0ee7a448b8aeb5775befefe9a3d331d4b6695d116ac32df409ab8896746bc3ec"
+      "bytes": 11147,
+      "sha256": "13430a4409846589fe686c69e9230af146d74e78fca768d4b134bf8e90fc65de"
     },
     {
       "path": "lessons/01_read_prices/lesson.ipynb",
-      "bytes": 19117,
-      "sha256": "84e260a0493e8e10286449ced1bc430983279b08828319e2323f784302580526"
+      "bytes": 18882,
+      "sha256": "002b9d42e27ba22dae2a5e095995be3025f938c5c7895925cdcd974ad33be8df"
     },
     {
       "path": "lessons/01_read_prices/README.md",
-      "bytes": 12226,
-      "sha256": "e8c29502bcd34d7b77ba0058672fb036762e0f69ac914cb447d38810a57ea8ab"
+      "bytes": 11988,
+      "sha256": "6924998bab26adea2a940a9069464914e6602111cb6481d512745a15c84253f3"
     },
     {
       "path": "lessons/02_daily_returns/lesson.ipynb",
-      "bytes": 18726,
-      "sha256": "7f7bad5d5d6892249f2990380a7f8658b5c8cef7ebe3c6512dd60ce5e51b04f6"
+      "bytes": 18483,
+      "sha256": "2707e3b0fff62cade80f795ca74e27f5c0db9f1c4be2095743645bd4615ffe53"
     },
     {
       "path": "lessons/02_daily_returns/README.md",
-      "bytes": 12688,
-      "sha256": "81055247d57d673ff4d008b9d048b055df100417569b42eeff2dedae95358191"
+      "bytes": 12442,
+      "sha256": "a902c49bb949b8da63ee078f129af46e2f0f88e14f57f03ad8fddc91e143b515"
     },
     {
       "path": "lessons/03_cumulative_returns/lesson.ipynb",
-      "bytes": 21408,
-      "sha256": "add2e2b70845bd12e0350a294f4b2acbade46ae361dd9ce95ce60c29375ede36"
+      "bytes": 21163,
+      "sha256": "57c7efb3fb0e27e585721b96fe69f1a73a8589a8684a5f73b0e0a4fbb47f320e"
     },
     {
       "path": "lessons/03_cumulative_returns/README.md",
-      "bytes": 13398,
-      "sha256": "ec9505e25a5639273c82fabeab09be003fb97c83f045248b77f703b4a2de660e"
+      "bytes": 13150,
+      "sha256": "6ade4e745036d2b6571b24fcadab4a5707bfae148b08de22611f5a8e0fa087b4"
     },
     {
       "path": "lessons/04_nav_drawdown/lesson.ipynb",
-      "bytes": 361578,
-      "sha256": "86d259fd5db50915f794336895566baecb4594290b8691f3db6955c9dadd8638"
+      "bytes": 361316,
+      "sha256": "8568362ed7320ce4eb8b56d03c0e714c8cf35d000434792f3afae6f4e6a02e33"
     },
     {
       "path": "lessons/04_nav_drawdown/README.md",
-      "bytes": 16464,
-      "sha256": "38d8eb5c97195cef2126550806ab98931022b018865fd19da092923214dd2dcb"
+      "bytes": 16211,
+      "sha256": "eb5119c44b91c178e479169427bb9bfa046e77c6f2c057259f70d9450f718ea1"
     },
     {
       "path": "lessons/05_momentum_factor/lesson.ipynb",
-      "bytes": 22818,
-      "sha256": "39a5ba0c87b2e6c4103d43b0dea96ba8424c86884ed4f354d49cfaa46937fa77"
+      "bytes": 22578,
+      "sha256": "de5433c0ae44553407e239975f6066c537a2798934b6c6aadb70a97befbfde21"
     },
     {
       "path": "lessons/05_momentum_factor/README.md",
-      "bytes": 13227,
-      "sha256": "f81193d56586806305013a435070f150966fb529ebe4db8328ae94716d0572ac"
+      "bytes": 12984,
+      "sha256": "d71edc2da35a6677556318f09dc3dbbb0776b417146cf11f06f5096f56d27da2"
     },
     {
       "path": "lessons/06_cross_section_ranking/lesson.ipynb",
-      "bytes": 22165,
-      "sha256": "e5725ac46e623a4f2afbb4dd9191a1372f254390ead4176a78613209adccf911"
+      "bytes": 21885,
+      "sha256": "fcfbc528e9761e3c7ac6d65ff578bb253d244407486362f33fe05778ec147563"
     },
     {
       "path": "lessons/06_cross_section_ranking/README.md",
-      "bytes": 14270,
-      "sha256": "536d18afbe079f5e79408e71b22edcec35297f430e15d9739e54bb94248891d0"
+      "bytes": 13987,
+      "sha256": "16b689f5a3f9f03c0e9c6c1ce801a5e30c990bfe289753f3f78e5a48a41ecd31"
     },
     {
       "path": "lessons/07_forward_returns_rank_ic/lesson.ipynb",
-      "bytes": 269546,
-      "sha256": "34195e290bf034e4fdf32397cbe8561632a7af669799dbe47d7827b4205ba19f"
+      "bytes": 269043,
+      "sha256": "7c3918e5d48cdf22b3ce68cdac743235a7fc74833954e876105915da313b2c6e"
     },
     {
       "path": "lessons/07_forward_returns_rank_ic/README.md",
-      "bytes": 16305,
-      "sha256": "58bfef8ad27279677b55d1d85b0402a11a6d2afa4b585243e000c165c8e9f19b"
+      "bytes": 15722,
+      "sha256": "9c584f08a598b50e587a26a74b7bb38a15815a90dfc78f853e43341f64e9f937"
     },
     {
       "path": "lessons/08_monthly_ic_icir/lesson.ipynb",
-      "bytes": 273262,
-      "sha256": "7af8ac4d813bcf5fb54ba435df4c996f3d4452a512c5955a67e1f92cd1a6a0a2"
+      "bytes": 272808,
+      "sha256": "9508f6534a296a13030a969c21b3ccb3351996acf241c3ce6a995dc6abbfade7"
     },
     {
       "path": "lessons/08_monthly_ic_icir/README.md",
-      "bytes": 19648,
-      "sha256": "9cdb02c21e8f9d5cafd5cd67e11e53143d81acbe8d32f11d2c55d5bf8363f8d8"
+      "bytes": 19118,
+      "sha256": "faa05717f825bad65e40f273445a28d17fac260764a271fc7056ce8839cb0885"
     },
     {
       "path": "lessons/09_quintile_returns/lesson.ipynb",
-      "bytes": 436033,
-      "sha256": "746d671a7830540ab94723d04a23cf7c3a9688ec4891965014dd26ffb199dbfb"
+      "bytes": 435692,
+      "sha256": "7f33d41b52df6296c4a3161aae0263a1e4ccf4119d92089e2919d05bd17c4090"
     },
     {
       "path": "lessons/09_quintile_returns/README.md",
-      "bytes": 22260,
-      "sha256": "32866479bfb1b376d573d262b506cfff9fdec28cb2a36726f40b2dfc27d0d657"
+      "bytes": 21922,
+      "sha256": "bac8daad5aead88d2f057b813686514a27b11e6bfda09d981ef75b63860a4da1"
     },
     {
       "path": "lessons/10_volatility_activity/lesson.ipynb",
-      "bytes": 210160,
-      "sha256": "b75c9681466f7355ca3e801ed3eaa8f149fee9a4cee31b21038c39e69e3f3eb4"
+      "bytes": 209829,
+      "sha256": "9545d5e9c2e4f145d782aa8f0ebc27a9a5ca2a47c0f254b1794f0f9e2cab3fa6"
     },
     {
       "path": "lessons/10_volatility_activity/README.md",
-      "bytes": 15377,
-      "sha256": "d6a2ff2234b6f13f4968336eb1abc781ca440f42394bd1c84bb0045983f0173b"
+      "bytes": 15049,
+      "sha256": "d97ed9ea4de70b5849ab28c347f34b1335c87b3d49bf36873ac1096752c4afbe"
     },
     {
       "path": "lessons/11_factor_preprocessing/lesson.ipynb",
-      "bytes": 214281,
-      "sha256": "05cc2c00393c910a636b506684f5b19d9eda90633b4cc2ef0f3de5f7af6af63e"
+      "bytes": 213981,
+      "sha256": "1094addca9e0855382d6e2967054645490b4dd3a80b1ad2a72a1885ed40cb6cd"
     },
     {
       "path": "lessons/11_factor_preprocessing/README.md",
-      "bytes": 18854,
-      "sha256": "b53593b51cf36d44458ed5beb741b896e1ef7af84d83bfbaa94bcf2b4848db66"
+      "bytes": 18557,
+      "sha256": "c6e530e5ce96262894a10f17657a29f2a4d117d58e71697825393f7f2a6da1d4"
     },
     {
       "path": "lessons/12_equal_weight_selection/lesson.ipynb",
-      "bytes": 227843,
-      "sha256": "56571174bad2d48429a455d6cbc2addf3e427ffa0172496d62a1d8be6cc04a79"
+      "bytes": 227556,
+      "sha256": "8a386d0c3282b83074af1f3c6fa6b4623b1da7216145e34899ad98b4678e18db"
     },
     {
       "path": "lessons/12_equal_weight_selection/README.md",
-      "bytes": 18901,
-      "sha256": "af2cb4645dd5314157e5bf0ede0f517a94e2f290ec0c85ef65f4b0b5592f6b3a"
+      "bytes": 18617,
+      "sha256": "baef21c90d449cdea2854d74bf898750361214bad6a7e567b5196a1371223608"
     },
     {
       "path": "lessons/13_first_execution/lesson.ipynb",
-      "bytes": 227201,
-      "sha256": "104ab407baee35597f0fece71671eb1b0d83cbea231da08b5be6ea23788fa527"
+      "bytes": 226830,
+      "sha256": "99d341b82914b20b24c5feda713cf2f3f12e7d5d92c95ccd615a24e9764a936b"
     },
     {
       "path": "lessons/13_first_execution/README.md",
-      "bytes": 18280,
-      "sha256": "dfa5a70e366b17f1a39ce62d2787a5231610d676032062cc46b10674a3c32ac7"
+      "bytes": 17848,
+      "sha256": "4b35e300280c8fea57f097cacc7af058cbdcf4c5fe7381606e98ad2542a9ddb5"
     },
     {
       "path": "lessons/14_daily_valuation_rebalance/lesson.ipynb",
-      "bytes": 225729,
-      "sha256": "d1cd7b54634f683c4c756037774d4dc945b8d02036e92765a7f8e08eb3c220c5"
+      "bytes": 225313,
+      "sha256": "3e417960361ab8f2daa030845dd9f1d493e71b4583f88dc6f5d3a7cf1bf54185"
     },
     {
       "path": "lessons/14_daily_valuation_rebalance/README.md",
-      "bytes": 25320,
-      "sha256": "b079d93d714e6bbc52f29348c2e695ee884125561e37228e710a2a44bbcf7ec5"
+      "bytes": 24845,
+      "sha256": "7ef11c513d21ec75e1bdd58093e6e8f00a28f42c4c7911662a97aaad18be8788"
     },
     {
       "path": "lessons/15_full_history_performance/lesson.ipynb",
-      "bytes": 426718,
-      "sha256": "adcb0bb0d6ed7ca574233489ea5b192b8ce18e05a0534733c8253f8ec4b59216"
+      "bytes": 426304,
+      "sha256": "0356744936ac5aef98d921bab1c4a75cb07f2380812f33d6d8a74f3c936518a7"
     },
     {
       "path": "lessons/15_full_history_performance/README.md",
-      "bytes": 24314,
-      "sha256": "2c89eb9ce8452f32853bc2a363cb6845acd736e28775e959143fcd0e0fad0584"
+      "bytes": 23840,
+      "sha256": "fbfe69f133ae60f5808993de479dcfef8854c660307617680486f9018d502d44"
     },
     {
       "path": "lessons/16_benchmark_cost_comparison/lesson.ipynb",
-      "bytes": 839821,
-      "sha256": "6a07e1ada7f07d6ac8b53fbfbc868370ef1a7dd7c07e0a373fc751e6a1aea944"
+      "bytes": 839460,
+      "sha256": "ffcc9071b5c85e6996d59d72263d94855096ea867dec6b81bf38a2c07ce5b7cd"
     },
     {
       "path": "lessons/16_benchmark_cost_comparison/README.md",
-      "bytes": 26047,
-      "sha256": "4e066f3592986b0a3736243a648ac796c5fe73b21b205d881530815ecc4d4e72"
+      "bytes": 25628,
+      "sha256": "2ba39b7ff78fc0f9d57e5f14f648f1756374f1f7875347e2a46c4350dffec5f0"
     },
     {
       "path": "lessons/17_split_stability/lesson.ipynb",
-      "bytes": 515231,
-      "sha256": "b36249a90bde1ae48c10aba314c00cd020fed9aaae4ed5eb1347599e082f5072"
+      "bytes": 514865,
+      "sha256": "0b47512903f4eefaa140976e003d26baf1fe65cd18147485c289031c7144a075"
     },
     {
       "path": "lessons/17_split_stability/README.md",
-      "bytes": 28721,
-      "sha256": "e81fb42defcfe03ff3f55edf3bf1c9a631facf667188e17873fe81875f7e589e"
+      "bytes": 28292,
+      "sha256": "edc2a9cb882fd90f6e2686c4cf611787cf788f8c772683ea6da67fbbbd7ccadf"
     },
     {
       "path": "lessons/18_real_market_data/lesson.ipynb",
-      "bytes": 521483,
-      "sha256": "6b5459027022b4a7f7887436a7f2284466619cc035435e90b36910bf1a76f488"
+      "bytes": 521173,
+      "sha256": "22326d4ffae5bc8542d308ec8dd94d14e579887f1c57c4031b2cb8f556529c47"
     },
     {
       "path": "lessons/18_real_market_data/README.md",
-      "bytes": 27287,
-      "sha256": "3a5625b6f3f924a66d541e22c4f5b4cb28fef5c8f267e949c89ca318faddf483"
+      "bytes": 26921,
+      "sha256": "e14a8f967f2bd425c10d85e3cc9ad9732fcf408f03f2f04048b09e04a3dbee48"
     },
     {
       "path": "lessons/19_finalize_project/lesson.ipynb",
-      "bytes": 57969,
-      "sha256": "33171e5ef963efea33de122d43d938e5da01cb721a8fa2290f103e3c79634919"
+      "bytes": 57522,
+      "sha256": "6aecc1ec11de5e97be272e874e33901b5f52b8aa859c2f81e2e4b1307dca1aed"
     },
     {
       "path": "lessons/19_finalize_project/README.md",
-      "bytes": 39501,
-      "sha256": "ba1e46bf725c0229a8ea562ff1196f2eddf92bdc5edfe9245a68f4cc7ed41151"
+      "bytes": 38981,
+      "sha256": "0e95f6fb26d3cfb70ec9de6fb4cc97b3e8b30d9ebd491e3038278c7137ef1f15"
     },
     {
       "path": "publication/ASSET_INDEX.md",
-      "bytes": 4714,
-      "sha256": "3b778ed5fbccffc7481824680eb31af4708b44c80086f337cd97bb1a74ff1fbb"
+      "bytes": 4678,
+      "sha256": "de9410920ea3cb403d682ae59182197aa0584e24c1d2ebf637eb12ec657c5cff"
     },
     {
       "path": "publication/build_learning_materials.py",
-      "bytes": 14342,
-      "sha256": "bc318fb8b93421691b774a7ebbb6436b1442afc54074fefef23588aeb2149692"
+      "bytes": 14397,
+      "sha256": "a4e1a3e307ff449e39cba14fc4a8a4787ff7dbef76741e42cb8c2c4403a96472"
     },
     {
       "path": "publication/create_full_snapshot.py",
-      "bytes": 1529,
-      "sha256": "7b7e604759e535dca3263e10eaa7ac130517cfc68744ed1a7ffbfd254fa24c9f"
+      "bytes": 1517,
+      "sha256": "ee061308c14d2a506d077187651968305426d5dddf701d93efec6555b0ff3120"
+    },
+    {
+      "path": "publication/editorial_revision.json",
+      "bytes": 7305,
+      "sha256": "df39a373c61055fd043f8345660aa618a8d5251626e6dbab6b8caef97ff591cd"
     },
     {
       "path": "publication/environment_check.py",
@@ -723,23 +728,28 @@
     },
     {
       "path": "publication/notebook_validation.json",
-      "bytes": 5489,
-      "sha256": "17eb048dd86099c4c8d573bcc8c00060dc2fd4ac3c60be3b0cc469a206a0b212"
+      "bytes": 5751,
+      "sha256": "0bb8f26d83b1761e6dc060da2a97fe1492e86567905f6eb7c59ccd6d9453c754"
     },
     {
       "path": "publication/prepare_publication.py",
-      "bytes": 10259,
-      "sha256": "fe0ed60d35f025e21bad5cd5bb85c5775a6cb799b018f219e3e71df893d9c2e4"
+      "bytes": 9958,
+      "sha256": "2fa3e0e7e9a04bca6bd01b09748276a4e623fa498f00fd13b59770c3dec55c1a"
+    },
+    {
+      "path": "publication/refresh_narrative.py",
+      "bytes": 5397,
+      "sha256": "fa8dbf0f8ff7d8b03946eef13f3ad6b7bdd6116b9a6509becc7cee25d45d2622"
     },
     {
       "path": "publication/restore_snapshot.py",
-      "bytes": 2005,
-      "sha256": "42a3463f58b18a7a09001ad2f948ddb328ebc939384a35b6acd8444af8aa854f"
+      "bytes": 1993,
+      "sha256": "9abf82facfbaa66531f9aae8a76443c70882440696243e88ecc703609748f8f9"
     },
     {
       "path": "publication/validation.json",
-      "bytes": 304,
-      "sha256": "c5ebd3f16f00fdaecdf4992d99c8123450d2656a056d5c986334a3a6d3445738"
+      "bytes": 335,
+      "sha256": "9a2f94868b2edbae403ece793aa29ac33053f78889322acdf7dc33ecc6f29de5"
     },
     {
       "path": "pyproject.toml",
@@ -748,8 +758,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8089,
-      "sha256": "03a6f771e1a1301336975afb172e4f57b0aa16558e184870a11bfb843d30302e"
+      "bytes": 7823,
+      "sha256": "73a0c086c457d7544372a392c1442979fdc395f3a779ff7dedf899c2422757f5"
     },
     {
       "path": "requirements-notebooks.txt",

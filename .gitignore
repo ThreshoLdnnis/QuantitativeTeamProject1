@@ -5,7 +5,7 @@ __pycache__/
 .ipynb_checkpoints/
 *.sqlite
 
-# 我的大型快照保留在同版本 Release
+# 大型快照保留在同版本 Release
 /data/market_teaching/prices.csv
 /data/market_teaching/universe.csv
 /runs/first_demo_20261107/factors.csv

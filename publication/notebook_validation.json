@@ -8,7 +8,7 @@
       "status": "passed",
       "code_cells": 2,
       "image_outputs": 0,
-      "sha256": "c252c9721101faa14fedc403aab6fcd21b326478436a674d46f29511e768c7bf"
+      "sha256": "187334a1597936837003c91dd32ccd73801b261fb931294c60de0f00bbbdd941"
     },
     {
       "step": 1,
@@ -16,7 +16,7 @@
       "status": "passed",
       "code_cells": 2,
       "image_outputs": 0,
-      "sha256": "84e260a0493e8e10286449ced1bc430983279b08828319e2323f784302580526"
+      "sha256": "002b9d42e27ba22dae2a5e095995be3025f938c5c7895925cdcd974ad33be8df"
     },
     {
       "step": 2,
@@ -24,7 +24,7 @@
       "status": "passed",
       "code_cells": 2,
       "image_outputs": 0,
-      "sha256": "7f7bad5d5d6892249f2990380a7f8658b5c8cef7ebe3c6512dd60ce5e51b04f6"
+      "sha256": "2707e3b0fff62cade80f795ca74e27f5c0db9f1c4be2095743645bd4615ffe53"
     },
     {
       "step": 3,
@@ -32,7 +32,7 @@
       "status": "passed",
       "code_cells": 4,
       "image_outputs": 0,
-      "sha256": "add2e2b70845bd12e0350a294f4b2acbade46ae361dd9ce95ce60c29375ede36"
+      "sha256": "57c7efb3fb0e27e585721b96fe69f1a73a8589a8684a5f73b0e0a4fbb47f320e"
     },
     {
       "step": 4,
@@ -40,7 +40,7 @@
       "status": "passed",
       "code_cells": 7,
       "image_outputs": 1,
-      "sha256": "86d259fd5db50915f794336895566baecb4594290b8691f3db6955c9dadd8638"
+      "sha256": "8568362ed7320ce4eb8b56d03c0e714c8cf35d000434792f3afae6f4e6a02e33"
     },
     {
       "step": 5,
@@ -48,7 +48,7 @@
       "status": "passed",
       "code_cells": 4,
       "image_outputs": 0,
-      "sha256": "39a5ba0c87b2e6c4103d43b0dea96ba8424c86884ed4f354d49cfaa46937fa77"
+      "sha256": "de5433c0ae44553407e239975f6066c537a2798934b6c6aadb70a97befbfde21"
     },
     {
       "step": 6,
@@ -56,7 +56,7 @@
       "status": "passed",
       "code_cells": 4,
       "image_outputs": 0,
-      "sha256": "e5725ac46e623a4f2afbb4dd9191a1372f254390ead4176a78613209adccf911"
+      "sha256": "fcfbc528e9761e3c7ac6d65ff578bb253d244407486362f33fe05778ec147563"
     },
     {
       "step": 7,
@@ -64,7 +64,7 @@
       "status": "passed",
       "code_cells": 9,
       "image_outputs": 1,
-      "sha256": "34195e290bf034e4fdf32397cbe8561632a7af669799dbe47d7827b4205ba19f"
+      "sha256": "7c3918e5d48cdf22b3ce68cdac743235a7fc74833954e876105915da313b2c6e"
     },
     {
       "step": 8,
@@ -72,7 +72,7 @@
       "status": "passed",
       "code_cells": 7,
       "image_outputs": 1,
-      "sha256": "7af8ac4d813bcf5fb54ba435df4c996f3d4452a512c5955a67e1f92cd1a6a0a2"
+      "sha256": "9508f6534a296a13030a969c21b3ccb3351996acf241c3ce6a995dc6abbfade7"
     },
     {
       "step": 9,
@@ -80,7 +80,7 @@
       "status": "passed",
       "code_cells": 8,
       "image_outputs": 1,
-      "sha256": "746d671a7830540ab94723d04a23cf7c3a9688ec4891965014dd26ffb199dbfb"
+      "sha256": "7f33d41b52df6296c4a3161aae0263a1e4ccf4119d92089e2919d05bd17c4090"
     },
     {
       "step": 10,
@@ -88,7 +88,7 @@
       "status": "passed",
       "code_cells": 6,
       "image_outputs": 1,
-      "sha256": "b75c9681466f7355ca3e801ed3eaa8f149fee9a4cee31b21038c39e69e3f3eb4"
+      "sha256": "9545d5e9c2e4f145d782aa8f0ebc27a9a5ca2a47c0f254b1794f0f9e2cab3fa6"
     },
     {
       "step": 11,
@@ -96,7 +96,7 @@
       "status": "passed",
       "code_cells": 6,
       "image_outputs": 1,
-      "sha256": "05cc2c00393c910a636b506684f5b19d9eda90633b4cc2ef0f3de5f7af6af63e"
+      "sha256": "1094addca9e0855382d6e2967054645490b4dd3a80b1ad2a72a1885ed40cb6cd"
     },
     {
       "step": 12,
@@ -104,7 +104,7 @@
       "status": "passed",
       "code_cells": 6,
       "image_outputs": 1,
-      "sha256": "56571174bad2d48429a455d6cbc2addf3e427ffa0172496d62a1d8be6cc04a79"
+      "sha256": "8a386d0c3282b83074af1f3c6fa6b4623b1da7216145e34899ad98b4678e18db"
     },
     {
       "step": 13,
@@ -112,7 +112,7 @@
       "status": "passed",
       "code_cells": 6,
       "image_outputs": 1,
-      "sha256": "104ab407baee35597f0fece71671eb1b0d83cbea231da08b5be6ea23788fa527"
+      "sha256": "99d341b82914b20b24c5feda713cf2f3f12e7d5d92c95ccd615a24e9764a936b"
     },
     {
       "step": 14,
@@ -120,7 +120,7 @@
       "status": "passed",
       "code_cells": 8,
       "image_outputs": 1,
-      "sha256": "d1cd7b54634f683c4c756037774d4dc945b8d02036e92765a7f8e08eb3c220c5"
+      "sha256": "3e417960361ab8f2daa030845dd9f1d493e71b4583f88dc6f5d3a7cf1bf54185"
     },
     {
       "step": 15,
@@ -128,7 +128,7 @@
       "status": "passed",
       "code_cells": 7,
       "image_outputs": 1,
-      "sha256": "adcb0bb0d6ed7ca574233489ea5b192b8ce18e05a0534733c8253f8ec4b59216"
+      "sha256": "0356744936ac5aef98d921bab1c4a75cb07f2380812f33d6d8a74f3c936518a7"
     },
     {
       "step": 16,
@@ -136,7 +136,7 @@
       "status": "passed",
       "code_cells": 10,
       "image_outputs": 1,
-      "sha256": "6a07e1ada7f07d6ac8b53fbfbc868370ef1a7dd7c07e0a373fc751e6a1aea944"
+      "sha256": "ffcc9071b5c85e6996d59d72263d94855096ea867dec6b81bf38a2c07ce5b7cd"
     },
     {
       "step": 17,
@@ -144,7 +144,7 @@
       "status": "passed",
       "code_cells": 10,
       "image_outputs": 1,
-      "sha256": "b36249a90bde1ae48c10aba314c00cd020fed9aaae4ed5eb1347599e082f5072"
+      "sha256": "0b47512903f4eefaa140976e003d26baf1fe65cd18147485c289031c7144a075"
     },
     {
       "step": 18,
@@ -152,7 +152,7 @@
       "status": "passed",
       "code_cells": 10,
       "image_outputs": 1,
-      "sha256": "6b5459027022b4a7f7887436a7f2284466619cc035435e90b36910bf1a76f488"
+      "sha256": "22326d4ffae5bc8542d308ec8dd94d14e579887f1c57c4031b2cb8f556529c47"
     },
     {
       "step": 19,
@@ -160,9 +160,14 @@
       "status": "passed",
       "code_cells": 18,
       "image_outputs": 0,
-      "sha256": "33171e5ef963efea33de122d43d938e5da01cb721a8fa2290f103e3c79634919"
+      "sha256": "6aecc1ec11de5e97be272e874e33901b5f52b8aa859c2f81e2e4b1307dca1aed"
     }
   ],
   "output_path_display": "Absolute workspace and environment paths normalized; numbers and images unchanged.",
-  "presentation_links_updated": "Large cached tables point to the release index; executable code and numerical/image outputs are unchanged."
+  "presentation_links_updated": "Large cached tables point to the release index; executable code and numerical/image outputs are unchanged.",
+  "narrative_revision": {
+    "updated_at_utc": "2026-11-07T15:01:16.216053+00:00",
+    "baseline_commit": "7286428f87390cacf348bdfc899bc1577162c4a0",
+    "scope": "Markdown only; all executed code cells, execution counts and saved outputs preserved."
+  }
 }
