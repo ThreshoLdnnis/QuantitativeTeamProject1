@@ -1,3 +1,5 @@
+![金融修道第二期项目封面](assets/readme-cover.jpg)
+
 # QuantitativeTeamProject1
 
 ## 金融修道第二期：如何从零到一搭建 A 股多因子选股与回测系统

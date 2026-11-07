@@ -117,7 +117,9 @@ def make_root_index(folders):
         title = (folder / "README.md").read_text(encoding="utf-8").splitlines()[0].lstrip("# ")
         rows.append(f"| {folder.name[:2]} | {title} | [详细讲解](lessons/{folder.name}/README.md) | [运行与输出](lessons/{folder.name}/lesson.ipynb) |")
     table = "\n".join(["| 步骤 | 学习内容 | README | Notebook |", "| --- | --- | --- | --- |", *rows])
-    text = f'''# QuantitativeTeamProject1
+    text = f'''![金融修道第二期项目封面](assets/readme-cover.jpg)
+
+# QuantitativeTeamProject1
 
 ## 金融修道第二期：如何从零到一搭建 A 股多因子选股与回测系统
 
