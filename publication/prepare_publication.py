@@ -51,13 +51,13 @@ def prepare():
         table.append(f"| `{path.relative_to(ROOT).as_posix()}` | {len(data)/1024**2:.3f} | `{hashlib.sha256(data).hexdigest()}` |")
     text = """# 完整数据与结果索引
 
-全部代码、每步 README、每步 Notebook、图表和小型结果表均可在仓库中直接浏览。完整数据快照、SQLite 和大型中间表放在同版本 Release 的完整 ZIP 中，保留项目原有相对目录。
+全部代码、每步 README、每步 Notebook、图表和小型结果表均可在仓库中直接浏览。教程文案更新至 v1.0.1，输入数据和计算结果保持不变，沿用 v1.0.0 的固定快照。完整数据、SQLite 和大型中间表保存在下方 ZIP 中，保留项目原有相对目录。
 
-- [v1.0.1 完整 Release](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.1)
-- [完整快照 ZIP](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.1/QuantitativeTeamProject1-full-snapshot.zip)
-- [ZIP 的 SHA-256](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.1/QuantitativeTeamProject1-full-snapshot.zip.sha256)
+- [v1.0.0 固定数据快照](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.0)
+- [完整快照 ZIP](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.0/QuantitativeTeamProject1-full-snapshot.zip)
+- [ZIP 的 SHA-256](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/download/v1.0.0/QuantitativeTeamProject1-full-snapshot.zip.sha256)
 
-在仓库根目录执行 `python publication/restore_snapshot.py`，脚本会核对 ZIP 哈希并恢复 `data/` 与 `runs/`，保留当前源码与学习文档。也可手动把完整 ZIP 解压到仓库父目录，合并其中的 `QuantitativeTeamProject1/`。
+在仓库根目录执行 `python publication/restore_snapshot.py`，脚本会核对 ZIP 哈希并恢复 `data/` 与 `runs/`，保留当前源码与学习文档。手动恢复时，只将 ZIP 中的 `data/` 与 `runs/` 合并到当前项目，避免用历史版本的教程覆盖新版文案。
 
 正文中的大型表格链接指向本索引；每一行路径都是完整 ZIP 中可以查到的实际文件。图表和 Notebook 静态输出可直接阅读。恢复完整快照后，既有真实数据实验可以离线运行；重新取数则需要另行记录来源和下载时间。
 

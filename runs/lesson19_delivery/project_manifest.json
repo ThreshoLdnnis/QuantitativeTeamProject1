@@ -698,13 +698,13 @@
     },
     {
       "path": "publication/ASSET_INDEX.md",
-      "bytes": 4678,
-      "sha256": "de9410920ea3cb403d682ae59182197aa0584e24c1d2ebf637eb12ec657c5cff"
+      "bytes": 4795,
+      "sha256": "5df071046aa65fd263e11d7316d4eb9292348545eaa03234cd863d04986cddb8"
     },
     {
       "path": "publication/build_learning_materials.py",
-      "bytes": 14397,
-      "sha256": "a4e1a3e307ff449e39cba14fc4a8a4787ff7dbef76741e42cb8c2c4403a96472"
+      "bytes": 14590,
+      "sha256": "bc028b3aa9cd84579c8bccadd072a769ff121e4e93c230dfc3ce69378e1ed60f"
     },
     {
       "path": "publication/create_full_snapshot.py",
@@ -733,8 +733,8 @@
     },
     {
       "path": "publication/prepare_publication.py",
-      "bytes": 9958,
-      "sha256": "2fa3e0e7e9a04bca6bd01b09748276a4e623fa498f00fd13b59770c3dec55c1a"
+      "bytes": 10075,
+      "sha256": "4a59796cff8f6849b709c59456dfbc96714b9a3e19c455995f704f158ae27703"
     },
     {
       "path": "publication/refresh_narrative.py",
@@ -744,12 +744,12 @@
     {
       "path": "publication/restore_snapshot.py",
       "bytes": 1993,
-      "sha256": "9abf82facfbaa66531f9aae8a76443c70882440696243e88ecc703609748f8f9"
+      "sha256": "6cd96453956225497cb8e7f135d409e355f2cbb972c28561f0a8f187fa3bdd3c"
     },
     {
       "path": "publication/validation.json",
       "bytes": 335,
-      "sha256": "9a2f94868b2edbae403ece793aa29ac33053f78889322acdf7dc33ecc6f29de5"
+      "sha256": "bd94e8350a2589ad929421881107c21f70a2f7a13e573ed6fc9bfab8109591e0"
     },
     {
       "path": "pyproject.toml",
@@ -758,8 +758,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7823,
-      "sha256": "73a0c086c457d7544372a392c1442979fdc395f3a779ff7dedf899c2422757f5"
+      "bytes": 8016,
+      "sha256": "d9861a21976368394ebe4745b7253043c3d1a4948730bf7db0c49fc0e2912a77"
     },
     {
       "path": "requirements-notebooks.txt",

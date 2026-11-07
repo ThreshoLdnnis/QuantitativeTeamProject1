@@ -10,7 +10,7 @@
 
 - 从 [第 0 步](lessons/00_environment/README.md)确认环境和数据位置，再按编号向后推进。
 - README 提供详细讲解和学习记录，Notebook 保存实际执行输出，并提供按顺序运行的完整代码。
-- [完整快照索引](publication/ASSET_INDEX.md)说明大表、原始快照和 SQLite 的位置；完整数据与结果放在 [v1.0.1 Release](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.1)。源码、全部图文教材、Notebook、图表和小型结果表可在仓库内直接浏览。
+- [完整快照索引](publication/ASSET_INDEX.md)说明大表、原始快照和 SQLite 的位置。教程与 Notebook 已更新至 [v1.0.1](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.1)，数据与计算结果沿用 [v1.0.0 固定快照](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.0)。恢复脚本只提取数据与结果，保留当前教程文案。源码、全部图文教材、Notebook、图表和小型结果表可在仓库内直接浏览。
 
 | 步骤 | 学习内容 | README | Notebook |
 | --- | --- | --- | --- |
