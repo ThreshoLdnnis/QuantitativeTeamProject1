@@ -18,7 +18,8 @@
   <a href="#start-here">Start here</a> ·
   <a href="#member-practice">Member practice</a> ·
   <a href="#lessons">Lessons</a> ·
-  <a href="#backtest-results">Results</a>
+  <a href="#backtest-results">Results</a> ·
+  <a href="#project-retrospective">Retrospective</a>
 </p>
 
 This project began with a price table and grew into a workflow for studying factors, selecting stocks, rebalancing, and evaluating a portfolio. I started with basic Python and learned the quantitative finance concepts along the way. The repository keeps the formulas, code, plots, and execution records, including the periods when the strategy fell behind its benchmark.
@@ -164,5 +165,88 @@ Further work includes historical universe membership, reliable trading-status da
 - **Member practice:** [shared inputs and assignment](member_practice/market_v1.0.0/).
 - **Implementation and rules:** [core modules](src/ashare_lab/), [configuration](configs/), [tests](tests/), and [SQL exercises](sql/worksheet.sql).
 - **Reproduction records:** [notebook execution](publication/notebook_validation.json), [publication validation](publication/validation.json), and the [previous delivery record](publication/history/previous_delivery.json).
+
+## Project retrospective
+
+**Review date: November 27, 2026** · Baseline: [3dad645](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/tree/3dad64551edc456b9e1a2251c2d807260b24d505)
+
+This phase completed the workflow from data preparation and factor testing to portfolio accounting and delivery. The evidence supports a research and backtesting prototype that reproduces its calculations under fixed inputs. It does not yet establish persistent alpha or realistic historical execution.
+
+The review separates completed work, observed results, and the evidence still needed. Whether another factor adds useful information is an empirical question; a better-looking equity curve cannot answer it on its own.
+
+### Completed work and deliverables
+
+- **Data and storage:** 50,927 daily records for 30 A-share stocks over 2019–2025, 1,699 trading dates, and 50,970 universe records, with provenance, gaps, type conventions, hashes, and a SQLite import and query workflow.
+- **Factor research:** 20-day momentum, 20-day volatility, and 5/20 relative volume; MAD clipping, cross-sectional standardization, direction adjustment, equal-weight combination, monthly IC, ICIR, and quintile analysis.
+- **Portfolio backtesting:** month-end closing signals and simulated execution at the next trading day's open, with orders, fills, cash, holdings, costs, and NAV recorded; a pool benchmark, cost scenarios, and period comparisons.
+- **Learning and reproduction:** 20 lesson notes, 20 notebooks, plots and execution records, a bilingual homepage, and 13 member distribution files for independent reconstruction from shared inputs.
+
+The review reran the existing **35 unit tests, all passing**. It independently recomputed **28 performance rows** from daily returns and **120 IC coefficients** from saved factor scores and forward-return labels; the values agree with the saved outputs. These checks address calculations and tested behavior, not source-data bias or live execution feasibility.
+
+Methods, input fingerprints, and numerical records are in the [review evidence](publication/retrospective_20261127/review_evidence.json). Tests are in [tests/](tests/); earlier notebook execution is recorded in [notebook_validation.json](publication/notebook_validation.json). The full notebook collection was not rerun in this review.
+
+### Observed performance on the market snapshot
+
+The table uses **2023–2025, 727 trading sessions, and the 1× teaching cost scenario**. Annualization assumes 252 sessions; the Sharpe calculation assumes a zero risk-free rate. The original figures remain in [metrics.csv](runs/lesson18_real_market/experiment/metrics.csv).
+
+| Metric | Three-factor portfolio | Equal-weight pool benchmark |
+| --- | ---: | ---: |
+| Full-period cumulative return | 27.01% | 19.73% |
+| Annualized return | 8.64% | 6.44% |
+| Annualized volatility | 11.74% | 12.30% |
+| Sharpe ratio | 0.76 | 0.57 |
+| Maximum drawdown | −14.17% | −13.59% |
+| 2025 cumulative return | 3.36% | 8.04% |
+
+The full-period return difference is **+7.28 percentage points**. The cumulative relative wealth return, `(1 + strategy return) / (1 + benchmark return) - 1`, is **+6.08%**. These are different measures; neither is annualized alpha.
+
+The full-period lead did not persist across all years. In 2025 the three-factor portfolio lagged by **4.68 percentage points**. The low-volatility strategy also produced a higher full-period cumulative return, **43.52%**, and a Sharpe ratio of about **1.28**. The present results do not show that adding momentum and activity created incremental value. Selecting the best performer after seeing these results would not constitute a new out-of-sample finding.
+
+### Strength of the factor evidence
+
+After removing labels that cross evaluation-period boundaries and requiring complete holding periods, there are **30 monthly IC observations, 10 per year**. Each cross section contains 30 stocks, leaving 6 per quintile. More than 50,000 daily price rows are not 50,000 independent factor tests.
+
+The composite's full-period mean IC is about **0.0748**, with a **non-annualized ICIR of 0.3552**. This indicates a positive ranking relationship within the sample, but the short series, variation across years, and already-viewed results limit the claim. Average theoretical returns across the five groups are not consistently monotonic. That pattern needs explanation; it is neither automatically a coding error nor evidence of a stable factor.
+
+Industry, market-capitalization, and market-beta exposures have not been controlled. The pool benchmark is useful for comparing stock selection, but its return difference is insufficient to establish independent alpha.
+
+### Additional cost comparison
+
+The original pipeline reruns only the three-factor portfolio at 0× and 2× costs. Its `relative_return` values for those scenarios use the 1× benchmark. This is a strategy-cost stress test against a fixed reference, not a comparison at matching cost rates. The main 1× baseline is unaffected.
+
+The review retained the saved strategy paths and reran the benchmark at each matching multiplier. Commission, slippage, and sell-side tax scale together. Every return below is cumulative over the full period.
+
+| Cost multiplier | Strategy cumulative return | Same-cost benchmark return | Cumulative relative wealth return |
+| --- | ---: | ---: | ---: |
+| 0× | 32.56% | 19.98% | 10.49% |
+| 1× | 27.01% | 19.73% | 6.08% |
+| 2× | 21.69% | 19.48% | 1.85% |
+
+Full precision is available in the [same-cost comparison CSV](publication/retrospective_20261127/cost_comparison_corrected.csv). The supplemental run uses the original inputs, factors, and backtest engine. Original data, configuration, and historical `metrics.csv` remain unchanged. This comparison is complete; automating the matching benchmark scenarios in the pipeline remains future work.
+
+Relative wealth return falls to about 1.85% when costs double, showing cost sensitivity within this sample. Fixed teaching costs also do not reconstruct historical fee schedules. For example, securities transaction stamp duty was [halved from August 28, 2023](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5211343/content.html); a historical cost model needs effective-date rules.
+
+### Remaining limitations
+
+1. **Historical universe membership is not reconstructed.** The fixed 30-stock sample can introduce selection and survivorship bias. Its eligibility flags do not fully verify historical ST status, listing age, delistings, or investability.
+2. **Historical tradability is unknown.** Every real-market record has `status_known=0`. Explicitly allowing unknown states is a teaching assumption, not new execution evidence. Adjusted execution prices, fractional units, trading lots, corporate-action cash flows, and capacity constraints need further work.
+3. **Missing prices and held-position valuation need more detail.** The snapshot has gaps, and the current engine stops if a held position lacks a valid valuation. A fuller model must distinguish suspension, listing status, and feed failure before applying valuation rules. Input coverage of 2019–2025 does not mean a seven-year real-market backtest was completed.
+4. **There is no new untouched out-of-sample proof.** The 2025 results have been viewed. Changes to windows, directions, or weights based on them need new validation evidence; repeatedly reusing that year would understate the effects of selection after observing results.
+
+For research protocols and backtest overfitting, see Arnott, Harvey, and Markowitz's [A Backtesting Protocol in the Era of Machine Learning](https://people.duke.edu/~charvey/Research/Published_Papers/SSRN-id3275654.pdf).
+
+### Priorities for the next version
+
+These are planned research tasks, not completed deliverables from this phase.
+
+| Order | Work | Evidence required |
+| --- | --- | --- |
+| 1 | Improve historical universe, status data, and gap classification | Traceable sources, entry and exit records, point-in-time eligibility, and a quality report |
+| 2 | Freeze hypotheses, parameter ranges, and validation design | A research protocol and a complete experiment log, including failed variants |
+| 3 | Compare individual factors, the composite, and factor-removal variants | Same-cost incremental tests, industry/size exposure analysis, and uncertainty estimates |
+| 4 | Improve execution, costs, and capacity modeling | Historical fees, corporate actions and cash reconciliation, constraint scenarios, and automated matching benchmarks |
+| 5 | Validate on new evidence and write the research report | Reproducible results, independent validation or forward paper-tracking records |
+
+The next research question is: **Do momentum and activity improve a low-volatility strategy after controlling for historical universe membership, risk exposures, and realistic costs?** The aim is an explainable, reproducible conclusion; performance improvement must be established by validation. The current work can be described as a personal multi-factor research and backtesting project. Claims of persistent alpha, institutional live-trading readiness, or elimination of survivorship bias remain unsupported.
 
 <p align="center"><a href="#quantitativeteamproject1">Back to top</a> · <a href="README.md">阅读中文版</a></p>

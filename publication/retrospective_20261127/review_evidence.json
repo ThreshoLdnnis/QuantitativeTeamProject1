@@ -1,0 +1,964 @@
+{
+  "review_date": "2026-11-27",
+  "reviewed_code_ref": "3dad64551edc456b9e1a2251c2d807260b24d505",
+  "repository": "https://github.com/ThreshoLdnnis/QuantitativeTeamProject1",
+  "scope": "Review of the fixed teaching snapshot and existing outputs; supplemental same-cost benchmark runs. No strategy optimization or new unseen-data validation.",
+  "verification": {
+    "existing_unit_tests": {
+      "run": 35,
+      "failures": 0,
+      "errors": 0
+    },
+    "performance_rows_recomputed": 28,
+    "ic_coefficient_check": {
+      "status": "passed",
+      "ic_coefficients_checked": 120,
+      "label_rows": 900,
+      "max_abs_ic_difference": 9.71445146547012e-17,
+      "method": "Join saved factor scores to saved forward-return labels, independently rank both arrays with average ties and calculate Pearson correlation of ranks; no ashare_lab research helper called. Does not validate source point-in-time universe or corporate-action inputs.",
+      "unique_monthly_dates": 30
+    },
+    "all_notebooks_rerun_in_this_review": false
+  },
+  "performance_from_daily_returns": [
+    {
+      "n_days": 727,
+      "total_return": 0.19728226198965393,
+      "annual_return_252": 0.06440098674530725,
+      "annual_volatility": 0.12302281602802216,
+      "sharpe_arithmetic_rf0": 0.5687777948302548,
+      "max_drawdown": -0.13589819534684788,
+      "gross_two_way_annual_turnover": 0.7665566336608828,
+      "total_reported_cost": 2129.050450681215,
+      "strategy": "benchmark",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": -0.0739551430341101,
+      "annual_return_252": -0.07689058143467542,
+      "annual_volatility": 0.10988674573665005,
+      "sharpe_arithmetic_rf0": -0.6734011892501004,
+      "max_drawdown": -0.13127375658130758,
+      "gross_two_way_annual_turnover": 1.4303072725199228,
+      "total_reported_cost": 1184.3857264696344,
+      "strategy": "benchmark",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.1966531566750911,
+      "annual_return_252": 0.20556358412025322,
+      "annual_volatility": 0.15231377846970512,
+      "sharpe_arithmetic_rf0": 1.3034180175517462,
+      "max_drawdown": -0.08137887073495398,
+      "gross_two_way_annual_turnover": 0.4509994846435767,
+      "total_reported_cost": 464.9604424834555,
+      "strategy": "benchmark",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.08042900206898018,
+      "annual_return_252": 0.08352899747230302,
+      "annual_volatility": 0.10062924871730095,
+      "sharpe_arithmetic_rf0": 0.847903035201902,
+      "max_drawdown": -0.07436098483141362,
+      "gross_two_way_annual_turnover": 0.41979603883907385,
+      "total_reported_cost": 479.7042817281253,
+      "strategy": "benchmark",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.2625103640849453,
+      "annual_return_252": 0.0841542334799028,
+      "annual_volatility": 0.14560648482185123,
+      "sharpe_arithmetic_rf0": 0.6276150341194496,
+      "max_drawdown": -0.17562013555067102,
+      "gross_two_way_annual_turnover": 14.014847296603188,
+      "total_reported_cost": 43360.760982426094,
+      "strategy": "momentum",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": -0.0783441921930852,
+      "annual_return_252": -0.08144606184144099,
+      "annual_volatility": 0.12631589504981622,
+      "sharpe_arithmetic_rf0": -0.6096742772977882,
+      "max_drawdown": -0.13952685171754653,
+      "gross_two_way_annual_turnover": 14.359081696635092,
+      "total_reported_cost": 13909.610805031916,
+      "strategy": "momentum",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.19630472007791777,
+      "annual_return_252": 0.2051980498030339,
+      "annual_volatility": 0.17502554352778985,
+      "sharpe_arithmetic_rf0": 1.1535989498620856,
+      "max_drawdown": -0.11888476814527904,
+      "gross_two_way_annual_turnover": 14.585397905049444,
+      "total_reported_cost": 14669.976842700358,
+      "strategy": "momentum",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.14504979035510868,
+      "annual_return_252": 0.15080847621304994,
+      "annual_volatility": 0.13050815558001527,
+      "sharpe_arithmetic_rf0": 1.1418333894503432,
+      "max_drawdown": -0.09146444054670766,
+      "gross_two_way_annual_turnover": 13.10382683548502,
+      "total_reported_cost": 14781.17333469382,
+      "strategy": "momentum",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.43518455627988506,
+      "annual_return_252": 0.13341493763220003,
+      "annual_volatility": 0.10147979912899073,
+      "sharpe_arithmetic_rf0": 1.284933510301225,
+      "max_drawdown": -0.07942888216179789,
+      "gross_two_way_annual_turnover": 7.996332470096662,
+      "total_reported_cost": 29278.09458741037,
+      "strategy": "volatility",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.040871077128856514,
+      "annual_return_252": 0.042595443886194406,
+      "annual_volatility": 0.084707298969434,
+      "sharpe_arithmetic_rf0": 0.5346146184140618,
+      "max_drawdown": -0.07942888216179789,
+      "gross_two_way_annual_turnover": 7.215927276904762,
+      "total_reported_cost": 7336.157272637457,
+      "strategy": "volatility",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.2977226597501046,
+      "annual_return_252": 0.31177341640139433,
+      "annual_volatility": 0.12895380036348728,
+      "sharpe_arithmetic_rf0": 2.1694484060289256,
+      "max_drawdown": -0.06445750665905114,
+      "gross_two_way_annual_turnover": 7.274879253019797,
+      "total_reported_cost": 8548.760899064375,
+      "strategy": "volatility",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.062499962757672556,
+      "annual_return_252": 0.06488833279694495,
+      "annual_volatility": 0.08399294417792322,
+      "sharpe_arithmetic_rf0": 0.7905953320076355,
+      "max_drawdown": -0.04913128538915046,
+      "gross_two_way_annual_turnover": 9.492010393080365,
+      "total_reported_cost": 13393.176415708538,
+      "strategy": "volatility",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.1256259883209354,
+      "annual_return_252": 0.04187289603605593,
+      "annual_volatility": 0.13738514748911793,
+      "sharpe_arithmetic_rf0": 0.36697262920074103,
+      "max_drawdown": -0.15011098709661175,
+      "gross_two_way_annual_turnover": 17.288758676189875,
+      "total_reported_cost": 54160.92791680477,
+      "strategy": "activity",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": -0.051642714445268134,
+      "annual_return_252": -0.053718359619908895,
+      "annual_volatility": 0.12223833186878298,
+      "sharpe_arithmetic_rf0": -0.3910954648099937,
+      "max_drawdown": -0.1313257184683807,
+      "gross_two_way_annual_turnover": 16.133957701240718,
+      "total_reported_cost": 15935.276236384485,
+      "strategy": "activity",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.1529561099634844,
+      "annual_return_252": 0.1597570522499947,
+      "annual_volatility": 0.1658672699005077,
+      "sharpe_arithmetic_rf0": 0.9757851887617616,
+      "max_drawdown": -0.0875943587539545,
+      "gross_two_way_annual_turnover": 17.188456963739128,
+      "total_reported_cost": 17874.921677608007,
+      "strategy": "activity",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.02945970317238933,
+      "annual_return_252": 0.030567314915491917,
+      "annual_volatility": 0.11940290913460593,
+      "sharpe_arithmetic_rf0": 0.3120540694958405,
+      "max_drawdown": -0.10039146852973058,
+      "gross_two_way_annual_turnover": 18.53869633195438,
+      "total_reported_cost": 20350.730002812274,
+      "strategy": "activity",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.27006276505925664,
+      "annual_return_252": 0.08639791148879827,
+      "annual_volatility": 0.11740928028772522,
+      "sharpe_arithmetic_rf0": 0.7643379603770615,
+      "max_drawdown": -0.14172553441121938,
+      "gross_two_way_annual_turnover": 14.203296950055146,
+      "total_reported_cost": 47889.0105872109,
+      "strategy": "multifactor",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.0104392570219074,
+      "annual_return_252": 0.010872968152316309,
+      "annual_volatility": 0.09927578335287164,
+      "sharpe_arithmetic_rf0": 0.1582104626871877,
+      "max_drawdown": -0.10715818407248157,
+      "gross_two_way_annual_turnover": 12.761945639993272,
+      "total_reported_cost": 13032.62825592456,
+      "strategy": "multifactor",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.21609661341159425,
+      "annual_return_252": 0.22596806280020898,
+      "annual_volatility": 0.14976492343457956,
+      "sharpe_arithmetic_rf0": 1.4349431728212851,
+      "max_drawdown": -0.08372472447220569,
+      "gross_two_way_annual_turnover": 15.282600334152363,
+      "total_reported_cost": 17030.739529831873,
+      "strategy": "multifactor",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.03358665636430991,
+      "annual_return_252": 0.03485204059025593,
+      "annual_volatility": 0.09543985438720747,
+      "sharpe_arithmetic_rf0": 0.4067577295961903,
+      "max_drawdown": -0.09273373441841104,
+      "gross_two_way_annual_turnover": 14.563854966859457,
+      "total_reported_cost": 17825.642801454473,
+      "strategy": "multifactor",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.32556043234196297,
+      "annual_return_252": 0.10262376359893355,
+      "annual_volatility": 0.11751933852929194,
+      "sharpe_arithmetic_rf0": 0.8899195059944786,
+      "max_drawdown": -0.13556725291369187,
+      "gross_two_way_annual_turnover": 14.218193141530993,
+      "total_reported_cost": 0.0,
+      "strategy": "multifactor_cost0",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.023281606461772464,
+      "annual_return_252": 0.024255232332173193,
+      "annual_volatility": 0.09954034082949186,
+      "sharpe_arithmetic_rf0": 0.29018002865368847,
+      "max_drawdown": -0.1011477612706062,
+      "gross_two_way_annual_turnover": 12.775360229975812,
+      "total_reported_cost": 0.0,
+      "strategy": "multifactor_cost0",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.234927795822369,
+      "annual_return_252": 0.24574286212982344,
+      "annual_volatility": 0.15004918692684818,
+      "sharpe_arithmetic_rf0": 1.5392268044426547,
+      "max_drawdown": -0.08238586832704675,
+      "gross_two_way_annual_turnover": 15.298105537734369,
+      "total_reported_cost": 0.0,
+      "strategy": "multifactor_cost0",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.04896934943569553,
+      "annual_return_252": 0.05082837415098185,
+      "annual_volatility": 0.09511603421638017,
+      "sharpe_arithmetic_rf0": 0.56890997377646,
+      "max_drawdown": -0.08852364675360214,
+      "gross_two_way_annual_turnover": 14.579620156819614,
+      "total_reported_cost": 0.0,
+      "strategy": "multifactor_cost0",
+      "split": "test"
+    },
+    {
+      "n_days": 727,
+      "total_return": 0.21691911139991538,
+      "annual_return_252": 0.070420125614304,
+      "annual_volatility": 0.117452428325008,
+      "sharpe_arithmetic_rf0": 0.6379221311098167,
+      "max_drawdown": -0.1478367275394924,
+      "gross_two_way_annual_turnover": 14.188461332077619,
+      "total_reported_cost": 93651.09632268225,
+      "strategy": "multifactor_cost2",
+      "split": "all"
+    },
+    {
+      "n_days": 242,
+      "total_return": -0.002232690679116689,
+      "annual_return_252": -0.0023248432980217393,
+      "annual_volatility": 0.09916404324114586,
+      "sharpe_arithmetic_rf0": 0.02575293225554447,
+      "max_drawdown": -0.11312505936118722,
+      "gross_two_way_annual_turnover": 12.74854610170298,
+      "total_reported_cost": 25890.330880414793,
+      "strategy": "multifactor_cost2",
+      "split": "development"
+    },
+    {
+      "n_days": 242,
+      "total_return": 0.19756077193691923,
+      "annual_return_252": 0.2065157565429443,
+      "annual_volatility": 0.149616717153093,
+      "sharpe_arithmetic_rf0": 1.329242935974427,
+      "max_drawdown": -0.08506113038669338,
+      "gross_two_way_annual_turnover": 15.267106360786519,
+      "total_reported_cost": 33360.944078400724,
+      "strategy": "multifactor_cost2",
+      "split": "validation"
+    },
+    {
+      "n_days": 243,
+      "total_return": 0.018438666113183233,
+      "annual_return_252": 0.01912807056826904,
+      "annual_volatility": 0.09595529039261212,
+      "sharpe_arithmetic_rf0": 0.24551062283557956,
+      "max_drawdown": -0.09692196289834498,
+      "gross_two_way_annual_turnover": 14.548244825094526,
+      "total_reported_cost": 34399.82136386672,
+      "strategy": "multifactor_cost2",
+      "split": "test"
+    }
+  ],
+  "strategy_vs_benchmark": [
+    {
+      "year": "all",
+      "strategy_total": 0.27006276505925664,
+      "benchmark_total": 0.19728226198965393,
+      "return_difference_percentage_points": 7.278050306960271,
+      "relative_wealth_return": 0.060788090979194465,
+      "active_daily_mean_annualized": 0.019767723810232077,
+      "tracking_error_annual": 0.05827478759182905,
+      "arithmetic_information_ratio": 0.33921571621487634,
+      "naive_daily_mean_t": 0.5761597298591113,
+      "hac_daily_mean_t_lag5": 0.6074775856556353,
+      "hac_daily_mean_t_lag20": 0.6212470878440055
+    },
+    {
+      "year": 2023,
+      "strategy_total": 0.0104392570219074,
+      "benchmark_total": -0.0739551430341101,
+      "return_difference_percentage_points": 8.43944000560175,
+      "relative_wealth_return": 0.09113424627455835,
+      "active_daily_mean_annualized": 0.08970433287977439,
+      "tracking_error_annual": 0.05213744799519751,
+      "arithmetic_information_ratio": 1.7205355522586612,
+      "naive_daily_mean_t": 1.6860523843208053,
+      "hac_daily_mean_t_lag5": 1.7724378213328489,
+      "hac_daily_mean_t_lag20": 2.1725031682815485
+    },
+    {
+      "year": 2024,
+      "strategy_total": 0.21609661341159425,
+      "benchmark_total": 0.1966531566750911,
+      "return_difference_percentage_points": 1.9443456736503162,
+      "relative_wealth_return": 0.016248197422991772,
+      "active_daily_mean_annualized": 0.01637563123175369,
+      "tracking_error_annual": 0.06427933003127749,
+      "arithmetic_information_ratio": 0.2547573414935333,
+      "naive_daily_mean_t": 0.24965146607085414,
+      "hac_daily_mean_t_lag5": 0.298972122096175,
+      "hac_daily_mean_t_lag20": 0.3663023980275479
+    },
+    {
+      "year": 2025,
+      "strategy_total": 0.03358665636430991,
+      "benchmark_total": 0.08042900206898018,
+      "return_difference_percentage_points": -4.684234570467027,
+      "relative_wealth_return": -0.04335532053931257,
+      "active_daily_mean_annualized": -0.046502946933955035,
+      "tracking_error_annual": 0.057697994225485126,
+      "arithmetic_information_ratio": -0.8059716383245563,
+      "naive_daily_mean_t": -0.7914484372735394,
+      "hac_daily_mean_t_lag5": -0.7561907350441937,
+      "hac_daily_mean_t_lag20": -0.6891990179724057
+    }
+  ],
+  "ic_summary": [
+    {
+      "split": "development",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_ic": -0.05933683647064118,
+      "ic_std_sample": 0.3069266313599402,
+      "icir_nonannualized": -0.19332579974481087,
+      "positive_fraction": 0.3,
+      "naive_mean_t": -0.6113498576672012,
+      "hac_t_lag3": -1.0802295611999866
+    },
+    {
+      "split": "development",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_ic": 0.13461897766662648,
+      "ic_std_sample": 0.21234140573742566,
+      "icir_nonannualized": 0.6339742227810804,
+      "positive_fraction": 0.7,
+      "naive_mean_t": 2.0048025218232217,
+      "hac_t_lag3": 4.42737701113091
+    },
+    {
+      "split": "development",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_ic": 0.03387874699532893,
+      "ic_std_sample": 0.23504977087040235,
+      "icir_nonannualized": 0.14413435448107034,
+      "positive_fraction": 0.6,
+      "naive_mean_t": 0.4557928492382789,
+      "hac_t_lag3": 0.4963023383073355
+    },
+    {
+      "split": "development",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_ic": 0.21545723338662764,
+      "ic_std_sample": 0.25848207793613126,
+      "icir_nonannualized": 0.8335480552731602,
+      "positive_fraction": 0.8,
+      "naive_mean_t": 2.6359103938671122,
+      "hac_t_lag3": 5.836234974846088
+    },
+    {
+      "split": "test",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_ic": -0.06431165443570354,
+      "ic_std_sample": 0.24956022433455238,
+      "icir_nonannualized": -0.2576999383903799,
+      "positive_fraction": 0.3,
+      "naive_mean_t": -0.8149187581986661,
+      "hac_t_lag3": -1.8186366220568806
+    },
+    {
+      "split": "test",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_ic": 0.06407119021134594,
+      "ic_std_sample": 0.21957671957593078,
+      "icir_nonannualized": 0.2917940951804309,
+      "positive_fraction": 0.5,
+      "naive_mean_t": 0.9227339485581225,
+      "hac_t_lag3": 0.9488308436585445
+    },
+    {
+      "split": "test",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_ic": 0.12186504566830345,
+      "ic_std_sample": 0.25828621915396155,
+      "icir_nonannualized": 0.47182171030062214,
+      "positive_fraction": 0.7,
+      "naive_mean_t": 1.4920312540660945,
+      "hac_t_lag3": 1.5806292960533064
+    },
+    {
+      "split": "test",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_ic": 0.057553399694564966,
+      "ic_std_sample": 0.3196666398134867,
+      "icir_nonannualized": 0.1800419328339835,
+      "positive_fraction": 0.5,
+      "naive_mean_t": 0.5693425820944419,
+      "hac_t_lag3": 0.5855517306526197
+    },
+    {
+      "split": "validation",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_ic": 0.012973476243261483,
+      "ic_std_sample": 0.1582307167385088,
+      "icir_nonannualized": 0.08199088338013015,
+      "positive_fraction": 0.6,
+      "naive_mean_t": 0.25927793885045647,
+      "hac_t_lag3": 0.2557409482475058
+    },
+    {
+      "split": "validation",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_ic": 0.025717463848720777,
+      "ic_std_sample": 0.2068673708229407,
+      "icir_nonannualized": 0.12431860929258168,
+      "positive_fraction": 0.7,
+      "naive_mean_t": 0.39312996090913216,
+      "hac_t_lag3": 0.3337114145125967
+    },
+    {
+      "split": "validation",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_ic": -0.00462281483995762,
+      "ic_std_sample": 0.33622969143171244,
+      "icir_nonannualized": -0.013748978623134192,
+      "positive_fraction": 0.5,
+      "naive_mean_t": -0.04347808795006986,
+      "hac_t_lag3": -0.0482850528876658
+    },
+    {
+      "split": "validation",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_ic": -0.004961714092817633,
+      "ic_std_sample": 0.31376545149960633,
+      "icir_nonannualized": -0.01581344940656686,
+      "positive_fraction": 0.5,
+      "naive_mean_t": -0.0500065177885893,
+      "hac_t_lag3": -0.05111698015240923
+    },
+    {
+      "split": "all_purged",
+      "factor": "activity",
+      "n_months": 30,
+      "mean_ic": -0.03689167155436108,
+      "ic_std_sample": 0.2400511970887994,
+      "icir_nonannualized": -0.15368251440426753,
+      "positive_fraction": 0.4,
+      "naive_mean_t": -0.8417537983332994,
+      "hac_t_lag3": -1.3225368674269888
+    },
+    {
+      "split": "all_purged",
+      "factor": "composite",
+      "n_months": 30,
+      "mean_ic": 0.07480254390889773,
+      "ic_std_sample": 0.2105737142759496,
+      "icir_nonannualized": 0.35523210561253427,
+      "positive_fraction": 0.6333333333333333,
+      "naive_mean_t": 1.9456863739404255,
+      "hac_t_lag3": 2.006297037834902
+    },
+    {
+      "split": "all_purged",
+      "factor": "momentum",
+      "n_months": 30,
+      "mean_ic": 0.050373659274558266,
+      "ic_std_sample": 0.27537887799754096,
+      "icir_nonannualized": 0.1829249201712852,
+      "positive_fraction": 0.6,
+      "naive_mean_t": 1.0019210510764467,
+      "hac_t_lag3": 0.9570336707295366
+    },
+    {
+      "split": "all_purged",
+      "factor": "volatility",
+      "n_months": 30,
+      "mean_ic": 0.08934963966279165,
+      "ic_std_sample": 0.303151499008885,
+      "icir_nonannualized": 0.2947359322151098,
+      "positive_fraction": 0.6,
+      "naive_mean_t": 1.6143351858152921,
+      "hac_t_lag3": 1.6547623463003276
+    }
+  ],
+  "quintile_summary": [
+    {
+      "split": "all_purged",
+      "factor": "activity",
+      "n_months": 30,
+      "mean_return_by_group": {
+        "1": 0.006314796499633679,
+        "2": 0.011783264924181837,
+        "3": 0.00716506306915156,
+        "4": 0.006881291351857887,
+        "5": 0.00634688120877449
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 3.2084709140811515e-05,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": 0.004935453129219399,
+      "spread_hac_t_lag3": 0.006722643467476042,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "all_purged",
+      "factor": "composite",
+      "n_months": 30,
+      "mean_return_by_group": {
+        "1": 0.004634432512775921,
+        "2": -0.00044495673521404745,
+        "3": 0.01620076204817058,
+        "4": 0.005760350713108871,
+        "5": 0.012340708514758091
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.007706276001982172,
+      "top_beats_bottom_fraction": 0.6333333333333333,
+      "spread_naive_t": 1.734244724051892,
+      "spread_hac_t_lag3": 1.5264457818832655,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "all_purged",
+      "factor": "momentum",
+      "n_months": 30,
+      "mean_return_by_group": {
+        "1": 0.004475789938558331,
+        "2": 0.005473380171497635,
+        "3": 0.01001215573135989,
+        "4": 0.00410394597445433,
+        "5": 0.014426025237729203
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.009950235299170874,
+      "top_beats_bottom_fraction": 0.5,
+      "spread_naive_t": 1.2678742588577632,
+      "spread_hac_t_lag3": 1.3086754723483152,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "all_purged",
+      "factor": "volatility",
+      "n_months": 30,
+      "mean_return_by_group": {
+        "1": 0.013221226320645532,
+        "2": -0.001471866450072586,
+        "3": 0.0055486031224178155,
+        "4": 0.00808722354225819,
+        "5": 0.013106110518350454
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": -0.0001151158022950798,
+      "top_beats_bottom_fraction": 0.5666666666666667,
+      "spread_naive_t": -0.014778996121978132,
+      "spread_hac_t_lag3": -0.015401647268721678,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "development",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.001074777394932841,
+        "2": -0.00453167653974269,
+        "3": -0.012679765451991601,
+        "4": -0.00907039904997341,
+        "5": -0.004638709522871191
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": -0.005713486917804031,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": -0.4395608952392392,
+      "spread_hac_t_lag3": -0.679563087741079,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "development",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": -0.01329191543165586,
+        "2": -0.02159294509442776,
+        "3": 0.0065832273142540105,
+        "4": -0.00898179744933191,
+        "5": 0.007437657491515451
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.020729572923171312,
+      "top_beats_bottom_fraction": 0.8,
+      "spread_naive_t": 2.6348555557161424,
+      "spread_hac_t_lag3": 3.4537173941720063,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "development",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": -0.00845959481223241,
+        "2": -0.01060031953535886,
+        "3": 0.0003133813827487397,
+        "4": -0.00640090245312924,
+        "5": -0.00469833775167426
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.0037612570605581484,
+      "top_beats_bottom_fraction": 0.5,
+      "spread_naive_t": 0.4008388929067348,
+      "spread_hac_t_lag3": 0.5350954126869123,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "development",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": -0.009886758786018548,
+        "2": -0.02260999358623499,
+        "3": -0.0045357140730694495,
+        "4": -0.0017554409517678495,
+        "5": 0.00894213422744476
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.01882889301346331,
+      "top_beats_bottom_fraction": 0.8,
+      "spread_naive_t": 1.972723605259958,
+      "spread_hac_t_lag3": 2.688479204973122,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "test",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.004326592465729506,
+        "2": 0.016087522624824088,
+        "3": 0.008893661901870149,
+        "4": 0.011581276039480922,
+        "5": 0.0008315746571232903
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": -0.0034950178086062154,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": -0.34522759357307053,
+      "spread_hac_t_lag3": -0.7596501775360753,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "test",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.00855240839771571,
+        "2": 0.008742652206222608,
+        "3": 0.01215604466942749,
+        "4": 0.0023196360692155494,
+        "5": 0.009949886346446531
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.0013974779487308194,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": 0.20065227549793316,
+      "spread_hac_t_lag3": 0.22161696869231579,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "test",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.00015095702655856038,
+        "2": 0.0047985648439054,
+        "3": 0.01125794164765934,
+        "4": 0.00939031614574919,
+        "5": 0.01612284802515539
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.01597189099859683,
+      "top_beats_bottom_fraction": 0.5,
+      "spread_naive_t": 1.0988086252231963,
+      "spread_hac_t_lag3": 1.247939120397938,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "test",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.01846149115682273,
+        "2": 0.00852795776223828,
+        "3": 0.0002509191841202074,
+        "4": 0.00748401018419279,
+        "5": 0.00699624940165392
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": -0.011465241755168809,
+      "top_beats_bottom_fraction": 0.5,
+      "spread_naive_t": -0.6658489405948957,
+      "spread_hac_t_lag3": -0.7738968788257976,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "validation",
+      "factor": "activity",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.013543019638238691,
+        "2": 0.023793948687464112,
+        "3": 0.02528129275757613,
+        "4": 0.01813299706606615,
+        "5": 0.022847778492071372
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.00930475885383268,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": 0.8407694873108652,
+      "spread_hac_t_lag3": 1.1264673998831787,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "validation",
+      "factor": "composite",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.01864280457226791,
+        "2": 0.01151542268256301,
+        "3": 0.029863014160830238,
+        "4": 0.02394321351944297,
+        "5": 0.019634581706312288
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.000991777134044382,
+      "top_beats_bottom_fraction": 0.7,
+      "spread_naive_t": 0.13728013311749607,
+      "spread_hac_t_lag3": 0.12306978277065087,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "validation",
+      "factor": "momentum",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.02173600760134884,
+        "2": 0.022221895205946363,
+        "3": 0.01846514416367159,
+        "4": 0.009322424230743039,
+        "5": 0.03185356543970648
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": 0.01011755783835764,
+      "top_beats_bottom_fraction": 0.5,
+      "spread_naive_t": 0.5964382669835486,
+      "spread_hac_t_lag3": 0.7227541783890098,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    },
+    {
+      "split": "validation",
+      "factor": "volatility",
+      "n_months": 10,
+      "mean_return_by_group": {
+        "1": 0.031088946591132417,
+        "2": 0.00966643647377895,
+        "3": 0.020930604256202686,
+        "4": 0.018533101394349633,
+        "5": 0.02337994792595268
+      },
+      "monotonic_increasing_mean_groups": false,
+      "mean_top_minus_bottom": -0.007708998665179738,
+      "top_beats_bottom_fraction": 0.4,
+      "spread_naive_t": -0.6555326551060637,
+      "spread_hac_t_lag3": -1.0850408339371496,
+      "stocks_per_group_min": 6,
+      "stocks_per_group_max": 6
+    }
+  ],
+  "same_cost_comparison": {
+    "file": "cost_comparison_corrected.csv",
+    "sha256": "33c10c7c428f8cc29e5ce5d7d4a38c0db4a52ccbb91c9534a3794f72b739770c",
+    "method_record": {
+      "audit_date": "2026-11-27",
+      "source_files_sha256": {
+        "data/market_teaching/prices.csv": "4473e5398f359f0cf2f24f7b28034ea16bd1159835df25ab6c7f80698bff9e5c",
+        "data/market_teaching/universe.csv": "8916ce3e8a7711ef2dda8577ea8fa2cc849eaf528f5412b70fc1ac7f505c9d45",
+        "data/market_teaching/calendar.csv": "137caeef2aa775e2c4a09dc03d836f0cd1c96378c1ff2e384fd6d666a6a179e1",
+        "data/market_teaching/metadata.json": "b21ca0efda6e6394d8cbbda81fd7d266492c34b87c30df6ba77e5b018e623751",
+        "runs/lesson18_real_market/experiment/config_snapshot.json": "d8ed3db03f11a7ceaf150df5ad96d4468edcce8654395d2d5e98307cfac7f0ed",
+        "runs/lesson18_real_market/experiment/factors.csv": "8bd3199b062c358a5060e97e602b7aea2791737c4f8cbe732586fdce8bd97935",
+        "src/ashare_lab/backtest.py": "609ac414e1855adf84f8d4bb7b58db8f2fdde64e0d21da0103f2d0bc661f2173",
+        "src/ashare_lab/cli.py": "45a16743274d143619a895b381d0fd567e008193f06e50c890c741120d5d8e8e"
+      },
+      "config": {
+        "start": "2023-01-01",
+        "end": "2025-12-31",
+        "lookback": 20,
+        "activity_short": 5,
+        "activity_long": 20,
+        "activity_mode": "relative_volume",
+        "directions": {
+          "momentum": 1,
+          "volatility": -1,
+          "activity": -1
+        },
+        "mad_scale": 3.0,
+        "top_n": 10,
+        "groups": 5,
+        "initial_cash": 1000000,
+        "commission_bps": 3,
+        "slippage_bps": 5,
+        "sell_tax_bps": 5,
+        "cost_multipliers": [
+          0,
+          1,
+          2
+        ],
+        "annual_risk_free": 0,
+        "splits": {
+          "development": [
+            "2023-01-01",
+            "2023-12-31"
+          ],
+          "validation": [
+            "2024-01-01",
+            "2024-12-31"
+          ],
+          "test": [
+            "2025-01-01",
+            "2025-12-31"
+          ]
+        },
+        "allow_unknown_status": true
+      },
+      "method": "Loaded the original prices/universe/calendar with load_dataset; read the already frozen factor CSV with text symbols and parsed dates; reran run_backtest(..., score_column=None) in memory with cost_multiplier 0,1,2. Read the corresponding frozen daily_multifactor[_cost0/_cost2].csv and recomputed metrics from daily returns. Relative wealth = (1+strategy total)/(1+same-cost benchmark total)-1. All commissions, slippage and sell-tax rates scale together. No original data, configs, outputs or repository files were modified. Values are the full precision outputs of that in-memory audit run.",
+      "scope_note": "This adds a same-cost comparison. Existing cost0/2 relative_return uses the fixed cost1 benchmark; it is interpretable as strategy-only cost stress against a fixed reference, but must not be called a matched-rate comparison. The main cost1 baseline is unaffected.",
+      "return_units": "Decimal fractions; total and relative wealth returns are cumulative over 727 sessions, annual return follows existing 252-session convention.",
+      "output_sha256": "33c10c7c428f8cc29e5ce5d7d4a38c0db4a52ccbb91c9534a3794f72b739770c"
+    }
+  },
+  "statistical_scope": "ICIR is mean IC divided by sample standard deviation, without annualization. IC/group summaries use purged complete monthly labels. Small samples and retrospective selection limit inference; descriptive t-statistics do not establish persistent alpha.",
+  "assessment": "Reproducible educational research and backtesting prototype; generalizable alpha and realistic historical execution remain unproven.",
+  "future_work_status": "planned"
+}
