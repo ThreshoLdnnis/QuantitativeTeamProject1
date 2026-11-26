@@ -112,117 +112,51 @@ sys.argv = [__file__]{' + ["--verify-only"]' if number == 19 else ''}
 
 
 def make_root_index(folders):
-    rows = []
-    for folder in folders:
+    """Build both README languages from their maintained Markdown templates."""
+    english_titles = {
+        "00": "Environment setup",
+        "01": "Read price data and its 13 fields",
+        "02": "Daily returns from adjusted prices",
+        "03": "Cumulative returns and buy-and-hold NAV",
+        "04": "NAV and maximum drawdown",
+        "05": "20-day momentum",
+        "06": "Cross-sectional momentum rankings",
+        "07": "Momentum and forward returns",
+        "08": "Monthly IC and ICIR",
+        "09": "Momentum quintile returns",
+        "10": "Volatility and relative volume",
+        "11": "MAD clipping, standardization, and factor direction",
+        "12": "Equal-weight factor scores and stock selection",
+        "13": "First trades and portfolio accounting",
+        "14": "Daily valuation and the next rebalance",
+        "15": "Full-period backtest and performance metrics",
+        "16": "Benchmark and trading-cost comparisons",
+        "17": "Period-by-period stability checks",
+        "18": "Real-market snapshot and historical replay",
+        "19": "Reproduction, validation, and delivery",
+    }
+    chinese_rows, english_rows = [], []
+    for folder in sorted(folders):
+        step = folder.name[:2]
+        if step not in english_titles:
+            raise ValueError(f"Add an English title for lesson {step}")
         title = (folder / "README.md").read_text(encoding="utf-8").splitlines()[0].lstrip("# ")
-        rows.append(f"| {folder.name[:2]} | {title} | [详细讲解](lessons/{folder.name}/README.md) | [运行与输出](lessons/{folder.name}/lesson.ipynb) |")
-    table = "\n".join(["| 步骤 | 学习内容 | README | Notebook |", "| --- | --- | --- | --- |", *rows])
-    text = f'''![金融修道第二期项目封面](assets/readme-cover.jpg)
-
-# QuantitativeTeamProject1
-
-## 金融修道第二期：如何从零到一搭建 A 股多因子选股与回测系统
-
-这份项目记录了我从基础 Python 出发，逐步搭建量化选股与回测系统的过程，包含 **第 0 步的环境准备 + 第 1—19 步完整操作流程**。每一步都有独立的 README 和可运行 Notebook，保留公式推导、代码解释、实际数值、图表与验收记录。实现中的假设和限制，以及没有跑赢基准的结果，也一并记录。
-
-完整流程：**环境 → 行情 → 收益与回撤 → 动量 → IC 与分组 → 三因子处理 → 综合选股 → 成交与现金 → 全期回测 → 基准和成本 → 分段检查 → 真实行情回放 → 交付复现**。
-
-## 成员实操资料
-
-完成教程后，三位成员各自从空工程、空 SQLite 开始独立重建项目，统一使用 **[成员实操资料目录](member_practice/market_v1.0.0/)**。这里提供本次实操要用的真实数据、说明、固定规则和任务要求；数据库、查询、因子、回测与报告由每个人自行完成。
-
-发放标识为 `QTP1-MARKET-FILES-1.0.0`。固定教学池共 30 只股票，观察截止 **2025-12-31**，真实数据原取数日期为 **2026-11-02**；三张 CSV、来源记录和参数与原快照相同，没有重新下载。实操使用这一套真实数据，教程前段的模拟数据用于理解方法。
-
-| 类型 | 文件 | 成员实操时怎么用 |
-| --- | --- | --- |
-| 行情表 | [prices.csv](member_practice/market_v1.0.0/prices.csv) | 50,927 行每日行情，每行是一只股票在一天的记录 |
-| 交易日历 | [calendar.csv](member_practice/market_v1.0.0/calendar.csv) | 1,699 个交易日，确定回看窗口和下一交易日 |
-| 股票池 | [universe.csv](member_practice/market_v1.0.0/universe.csv) | 50,970 行成员资格，保留 eligible=0 的记录 |
-| 数据字典 | [04_数据字典.md](member_practice/market_v1.0.0/04_数据字典.md) | 逐列解释类型、单位、复权、前导零和缺失值 |
-| 来源说明 | [05_数据来源与使用说明.md](member_practice/market_v1.0.0/05_数据来源与使用说明.md) | 说明来源、取数时间、范围和固定教学池的局限 |
-| 统一规则 | [06_统一参数说明.md](member_practice/market_v1.0.0/06_统一参数说明.md) | 解释因子、标准化、选股、调仓、基准和费用口径 |
-| 实操任务 | [07_任务与提交要求.md](member_practice/market_v1.0.0/07_任务与提交要求.md) | 独立建库、Q01–Q10 练习、因子回测与最终提交清单 |
-| 来源记录 | [metadata.json](member_practice/market_v1.0.0/metadata.json) | 程序可读的原始来源记录，与原快照保持相同字节 |
-| 参数配置 | [market_teaching.json](member_practice/market_v1.0.0/market_teaching.json) | 程序读取的冻结参数，三人保持一致 |
-| 核验说明 | [08_哈希核验说明.md](member_practice/market_v1.0.0/08_哈希核验说明.md) | 说明如何检查文件指纹及处理不一致 |
-| 哈希清单 | [09_文件哈希清单.txt](member_practice/market_v1.0.0/09_文件哈希清单.txt) | 记录 11 份固定文件的 SHA-256 |
-| 校验工具 | [校验文件.py](member_practice/market_v1.0.0/校验文件.py) | 使用负责人公告的摘要检查完整性，仅依赖标准库 |
-| 发布公告 | [00_发放公告.txt](member_practice/market_v1.0.0/00_发放公告.txt) | 负责人单独发给成员的版本、实际摘要和运行命令 |
-
-建议先读数据字典、来源和参数说明，再核验输入、自行建库、完成 SQL 与 pandas 练习，最后进行因子研究和回测。通过克隆仓库或下载仓库 ZIP 取得完整目录；单独下载时保留文件名，把它们放在同一文件夹。个人代码、数据库、日志和结果存到该目录下的 `work/`。
-
-本次文件哈希清单 SHA-256：
-
-```text
-2bc3d368c5eb9228de256ea228a942374c6e1b9010ebe762b910fe84793482cf
-```
-
-在仓库根目录运行（Python 3.10 及以上）：
-
-```powershell
-cd member_practice/market_v1.0.0
-python '.\\校验文件.py' --expected-manifest-sha256 2bc3d368c5eb9228de256ea228a942374c6e1b9010ebe762b910fe84793482cf
-```
-
-校验工具应显示“通过”并正常退出。这个命令只核验本次成员实操文件；下面的原项目快照恢复流程用于复现参考教程。哈希用于发现文件差异，独立完成情况还需通过从空库重建、运行记录和代码讲解验收。负责人保留原发布摘要，数据修订时统一发新版本，三人一起切换。
-
-## 阅读顺序
-
-- 从 [第 0 步](lessons/00_environment/README.md)确认环境和数据位置，再按编号向后推进。
-- README 提供详细讲解和学习记录，Notebook 保存实际执行输出，并提供按顺序运行的完整代码。
-- [完整快照索引](publication/ASSET_INDEX.md)说明大表、原始快照和 SQLite 的位置。教程与 Notebook 已更新至 [v1.0.1](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.1)，数据与计算结果沿用 [v1.0.0 固定快照](https://github.com/ThreshoLdnnis/QuantitativeTeamProject1/releases/tag/v1.0.0)。恢复脚本只提取数据与结果，保留当前教程文案。源码、全部图文教材、Notebook、图表和小型结果表可在仓库内直接浏览。
-
-{table}
-
-## 环境安装与复现
-
-项目已在 Python 3.12 环境验证。Windows PowerShell 的完整操作如下；没有 `py` 时，可使用第 0 步记录的解释器绝对路径方法。
-
-```powershell
-git clone https://github.com/ThreshoLdnnis/QuantitativeTeamProject1.git
-cd QuantitativeTeamProject1
-py -3.12 -m venv .venv
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements-tested.txt -e ".[plots]"
-.\\.venv\\Scripts\\python.exe publication/restore_snapshot.py
-.\\.venv\\Scripts\\python.exe examples/19_finalize_project.py --verify-only
-```
-
-运行 Notebook 时，另外安装：
-
-```powershell
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements-notebooks.txt
-.\\.venv\\Scripts\\python.exe -m jupyter lab
-```
-
-安装后可直接打开 `lessons/NN_*/lesson.ipynb`。Notebook 会从当前目录向上定位仓库，并设置脚本路径；第 19 步 Notebook 固定使用校验模式，避免无意重复打包。
-
-完整重跑已有输入和第 01—18 课：
-
-```powershell
-.\\.venv\\Scripts\\python.exe examples/19_finalize_project.py --rebuild
-```
-
-## 结果与解释范围
-
-| 实验 | 区间 | 三因子累计收益 | 同池基准累计收益 | 解释范围 |
-| --- | --- | --- | --- | --- |
-| 人工数据 | 2020—2025 | −3.5632% | +14.1581% | 用于验证工程与评估方法，不能作为 A 股市场结论 |
-| 固定 30 股真实快照 | 2023—2025 | +27.0063% | +19.7282% | 在教学成交假设下回放已查看的样本，不能据此认定策略有效 |
-
-模拟策略在开发和验证区间落后、测试区间领先；真实快照中 2025 年仍落后于基准。历史交易状态未知、固定幸存股票池、后复权小数单位、固定教学费用等限制均随各步记录保留。
-
-整理结果时，我特别区分累计收益、年化、波动、回撤、收益差百分点与财富比值，并将理论标签、IC、分组检验和实际模拟账户分别解释。这里的“测试”年份已经被查看过，本次整理属于复现与事后检查。
-
-## 程序、文档与运行证据
-
-- [可复用程序](src/ashare_lab/)与[课程脚本](examples/)
-- [固定规则](configs/)、[自动测试](tests/)、[SQL 练习](sql/worksheet.sql)
-- [Notebook 执行记录](publication/notebook_validation.json)与[发布校验](publication/validation.json)
-- [方法总览](docs/07_教学项目总览.md)与[历史交付记录](publication/history/previous_delivery.json)
-
-讲解以项目实际代码和快照结果为依据；已有结果不代表实盘验证、独立掌握或未见样本外验证。动态历史股票池、可靠的历史可成交状态、企业行动现金账、整手/最低佣金/容量与冲击、独立新时期评估等仍是后续研究工作。
-'''
-    (ROOT / "README.md").write_text(text, encoding="utf-8")
+        title = re.sub(r"^第\s*\d+\s*步[：:]\s*", "", title)
+        notes = f"lessons/{folder.name}/README.md"
+        notebook = f"lessons/{folder.name}/lesson.ipynb"
+        chinese_rows.append(f"| {step} | {title} | [讲解]({notes}) | [Notebook]({notebook}) |")
+        english_rows.append(f"| {step} | {english_titles[step]} | [Notes]({notes}) | [Notebook]({notebook}) |")
+    chinese_table = "\n".join(["| 步骤 | 内容 | 讲解 | Notebook |", "| --- | --- | --- | --- |", *chinese_rows])
+    english_table = "\n".join(["| Step | Topic | Notes | Notebook |", "| --- | --- | --- | --- |", *english_rows])
+    for template_name, output_name, table in [
+        ("README.zh.md", "README.md", chinese_table),
+        ("README.en.md", "README.en.md", english_table),
+    ]:
+        template = (ROOT / "publication/readme_templates" / template_name).read_text(encoding="utf-8")
+        marker = "<!-- LESSON_TABLE -->"
+        if template.count(marker) != 1:
+            raise ValueError(f"Expected one lesson table marker in {template_name}")
+        (ROOT / output_name).write_text(template.replace(marker, table), encoding="utf-8", newline="\n")
 
 
 def execute_notebooks(folders):
